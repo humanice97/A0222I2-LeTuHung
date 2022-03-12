@@ -20,7 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc2a360-cef6-4c43-8151-ed2949aa85af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss4_git_html/thuc_hanh/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_git_html/bai_tap/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_git_html/bai_tap/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formcovua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formdangkyhocvien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formsothichcuaban.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formsurveykhachhang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieupart2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/Oderform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/Searchform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/advandcetable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/simpletable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +60,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss5_form_table/thuc_hanh" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\A0222I2-LeTuHung\Module1\ss5_form_table\thuc_hanh" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\A0222I2-LeTuHung\Module1\ss4_git_html\thuc_hanh" />
     </key>
@@ -68,6 +83,15 @@
       <workItem from="1646064496031" duration="5000" />
       <workItem from="1646134420406" duration="3000" />
       <workItem from="1646399448319" duration="1643000" />
+      <workItem from="1646401360397" duration="1688000" />
+      <workItem from="1646441532884" duration="198000" />
+      <workItem from="1646656248780" duration="6645000" />
+      <workItem from="1646828098596" duration="7727000" />
+      <workItem from="1646905016007" duration="92000" />
+      <workItem from="1646917256201" duration="6632000" />
+      <workItem from="1646995735640" duration="13185000" />
+      <workItem from="1647048793364" duration="601000" />
+      <workItem from="1647049484484" duration="5911000" />
     </task>
     <servers />
   </component>
@@ -84,5 +108,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1646998390999">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.720@0.0.1366.720" timestamp="1646998390999" />
+    <state x="520" y="80" key="RollbackChangesDialog" timestamp="1647048820834">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="520" y="80" key="RollbackChangesDialog/0.0.1366.720@0.0.1366.720" timestamp="1647048820834" />
+    <state x="492" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647048811751">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="492" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.720@0.0.1366.720" timestamp="1647048811751" />
+    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1646830017334">
+      <screen x="0" y="0" width="1366" height="720" />
+    </state>
+    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1366.720@0.0.1366.720" timestamp="1646830017334" />
   </component>
 </project>
