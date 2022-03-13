@@ -20,19 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc2a360-cef6-4c43-8151-ed2949aa85af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss4_git_html/bai_tap/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss4_git_html/bai_tap/index1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formcovua.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formdangkyhocvien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formsothichcuaban.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formsurveykhachhang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieupart2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/Oderform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/Searchform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/advandcetable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/thuc_hanh/simpletable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablelich.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieupart2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieupart2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +82,7 @@
       <workItem from="1646995735640" duration="13185000" />
       <workItem from="1647048793364" duration="601000" />
       <workItem from="1647049484484" duration="5911000" />
+      <workItem from="1647068233192" duration="6326000" />
     </task>
     <servers />
   </component>
