@@ -20,9 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc2a360-cef6-4c43-8151-ed2949aa85af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablelich.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/Hienthidaura_Bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/Hienthidaura_Bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/Hienthidaura_Bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/Hienthidaura_Bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/NhungJS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/NhungJS_bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/NhungJS_bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss6_javascript_basic/thuc_hanh/NhungJS_bai3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieupart2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablethoikhoabieupart2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_form_table/bai_tap/formcovua.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formcovua.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_form_table/bai_tap/formdangkyhocvien.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formdangkyhocvien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_form_table/bai_tap/formsothichcuaban.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/formsothichcuaban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablelich.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_form_table/bai_tap/tablelich.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -83,6 +94,10 @@
       <workItem from="1647048793364" duration="601000" />
       <workItem from="1647049484484" duration="5911000" />
       <workItem from="1647068233192" duration="6326000" />
+      <workItem from="1647178892878" duration="3602000" />
+      <workItem from="1647183689629" duration="2852000" />
+      <workItem from="1647230514253" duration="26000" />
+      <workItem from="1647262100491" duration="2819000" />
     </task>
     <servers />
   </component>
