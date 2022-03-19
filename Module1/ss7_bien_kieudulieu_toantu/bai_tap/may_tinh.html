@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+    <table>
+        <thead>
+        <h1>Caculator</h1>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input  type="text" id="iput"></td>
+            <td><input  type="text" id="iput1"></td>
+        </tr>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td><input onclick="tinh('add')" type="button" value="Addition(+)"></td>
+            <td><input onclick="tinh('sub')" type="button" value="Subtraction(-)"></td>
+            <td><input onclick="tinh('mul')" type="button" value="Multiplication(X)"></td>
+            <td><input onclick="tinh('div')" type="button" value="Division(/)"></td>
+        </tr>
+        <tr>
+            <td style="color: blue" colspan="4" id="ketqua"></td>
+        </tr>
+    </table>
+
+<script>
+    function tinh(string) {
+        let caculator1 = document.getElementById("iput").value;
+        let caculator2 = document.getElementById("iput1").value;
+        let cacul1 = parseInt(caculator1);
+        let cacul2 = parseInt(caculator2);
+        if (string == 'add') {
+            let tong = (cacul1 +cacul2);
+        document.getElementById("ketqua").innerHTML = "Kết quả = " + tong;
+        }
+        else if (string == 'sub') {
+            let hieu = (cacul1 - cacul2);
+            document.getElementById("ketqua").innerHTML = "Kết quả = " + hieu;
+        }
+        else if (string == 'mul') {
+            let nhan = (cacul1 * cacul2);
+            document.getElementById("ketqua").innerHTML = "Kết quả = " + nhan;
+        }
+        else if (string == 'div') {
+            let chia = (cacul1 / cacul2);
+            document.getElementById("ketqua").innerHTML = "Kết quả = " + chia;
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tiente</title>
+    <style>
+        tr {
+            text-align: center;
+        }
+        select { width: 120px;}
+    </style>
+</head>
+<body>
+    <table width="700px">
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="input1"></td>
+            <td>
+                <select id="sl1">
+                    <option value="a">Viet Nam</option>
+                    <option value="b">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="sl2">
+                    <option value="b">USD</option>
+                    <option value="a">Viet Nam</option>
+                </select>
+            </td>
+            <td><input onclick="convert()" style="background-color: violet; color: white" type="button" value="Convert"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td align="left" colspan="3" style="color: blue" id="result"></td>
+        </tr>
+    </table>
+<script>
+
+         function convert() {
+             let tien = document.getElementById('input1').value;
+             let select1 = document.getElementById('sl1').value;
+             let select2 = document.getElementById('sl2').value;
+             if (select1 == select2) {
+                 document.getElementById('result').innerHTML = "Result = " + tien
+             }
+             if (select1 == 'a' && select2 == 'b') {
+                 let vndtousd = (tien / 23000);
+                 document.getElementById('result').innerHTML = "Result = " + vndtousd
+             }
+             if (select1 == 'b' && select2 == 'a') {
+                 let usdtovnd = (tien * 23000);
+                 document.getElementById('result').innerHTML = 'Result = ' + usdtovnd
+             }
+         }
+</script>
+
+</body>
+</html>
