@@ -20,19 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc2a360-cef6-4c43-8151-ed2949aa85af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/Chuyen_doi_tien_te.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/bien_kieudulieu_toantu/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/bien_kieudulieu_toantu/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/bien_kieudulieu_toantu/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/bien_kieudulieu_toantu/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/may_tinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/may_tinh_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/thuc_hanh/bien_kieudulieu/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/thuc_hanh/bien_kieudulieu/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/thuc_hanh/bien_kieudulieu/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/thuc_hanh/toantu/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/thuc_hanh/toantu/bai1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/may_tinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/may_tinh_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/may_tinh_2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +97,8 @@
       <workItem from="1647674397983" duration="6444000" />
       <workItem from="1647685577273" duration="399000" />
       <workItem from="1647687904774" duration="4525000" />
+      <workItem from="1647693121011" duration="47000" />
+      <workItem from="1647698428526" duration="2794000" />
     </task>
     <servers />
   </component>

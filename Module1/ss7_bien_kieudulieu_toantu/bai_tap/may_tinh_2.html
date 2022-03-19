@@ -9,51 +9,68 @@
             border-collapse: collapse;
             text-align: center;
         }
+
         input {
             width: 70px;
         }
     </style>
 </head>
 <body>
-    <table border="1" >
-        <tbody>
-        <tr>
-            <td colspan="4" width="300"><input style="width: 290px; text-align: right" type="text" id="dauvao"></td>
-        </tr>
-        <tr>
-            <td><input type="button" onclick="nhapvao" id="ngoacmo" value="("></td>
-            <td><input type="button" onclick="nhapvao" id="ngoacdong" value=")"></td>
-            <td><input type="button" onclick="nhapvao" id="phantram" value="%"></td>
-            <td><input type="button" onclick="nhapvao" id="xeE" value="CE"></td>
-        </tr>
-        <tr>
-            <td><input type="button" onclick="nhapvao" id="bay" value="7"></td>
-            <td><input type="button" onclick="nhapvao" id="tam" value="8"></td>
-            <td><input type="button" onclick="nhapvao" id="chin" value="9"></td>
-            <td><input type="button" onclick="nhapvao" id="chia" value="/"></td>
-        </tr>
-        <tr>
-            <td><input type="button" onclick="nhapvao" id="bon" value="4"></td>
-            <td><input type="button" onclick="nhapvao" id="nam" value="5"></td>
-            <td><input type="button" onclick="nhapvao" id="sau" value="6"></td>
-            <td><input type="button" onclick="nhapvao" id="nhan" value="X"></td>
-        </tr>
-        <tr>
-            <td><input type="button" onclick="nhapvao" id="mot" value="1"></td>
-            <td><input type="button" onclick="nhapvao" id="hai" value="2"></td>
-            <td><input type="button" onclick="nhapvao" id="ba" value="3"></td>
-            <td><input type="button" onclick="nhapvao" id="tru" value="-"></td>
-        </tr>
-        <tr>
-            <td><input type="button" onclick="nhapvao" id="khong" value="0"></td>
-            <td><input type="button" onclick="nhapvao" id="cham" value="."></td>
-            <td><input type="button" onclick="nhapvao" id="bang" value="=" style="background-color: cornflowerblue; color: white;"></td>
-            <td><input type="button" onclick="nhapvao" id="cong" value="+"></td>
-        </tr>
-        </tbody>
-    </table>
+<table>
+    <tbody>
+    <tr>
+        <td colspan="4" width="300"><input style="width: 290px; text-align: right" type="text" id="display" value="0"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhapvao('(')"  value="("></td>
+        <td><input type="button" onclick="nhapvao(')')"  value=")"></td>
+        <td><input type="button" onclick="nhapvao('%')"  value="%"></td>
+        <td><input type="button" onclick="clearInput('CE')" value="CE"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhapvao(7)" value="7"></td>
+        <td><input type="button" onclick="nhapvao(8)" value="8"></td>
+        <td><input type="button" onclick="nhapvao(9)" value="9"></td>
+        <td><input type="button" onclick="nhapvao('/')" value="/"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhapvao(4)" value="4"></td>
+        <td><input type="button" onclick="nhapvao(5)" value="5"></td>
+        <td><input type="button" onclick="nhapvao(6)" value="6"></td>
+        <td><input type="button" onclick="nhapvao('*')" value="X"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhapvao(1)" value="1"></td>
+        <td><input type="button" onclick="nhapvao(2)" value="2"></td>
+        <td><input type="button" onclick="nhapvao(3)" value="3"></td>
+        <td><input type="button" onclick="nhapvao('-')" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhapvao(0)"value="0"></td>
+        <td><input type="button" onclick="nhapvao('.')" value="."></td>
+        <td><input type="button" onclick="tinhKetQua()" value="="
+                   style="background-color: cornflowerblue; color: white;"></td>
+        <td><input type="button" onclick="nhapvao('+')" value="+"></td>
+    </tr>
+    </tbody>
+</table>
 <script>
+    let str = "";
 
+    function nhapvao(num) {
+        str += num; // str = str + num;
+        document.getElementById("display").value = str;
+    }
+    function tinhKetQua() {
+       let result = eval(str);
+       document.getElementById("display").value = result;
+       str=result+"";
+    }
+    function clearInput() {
+        str=""
+        document.getElementById("display").value = ""
+
+    }
 </script>
 </body>
 </html>
