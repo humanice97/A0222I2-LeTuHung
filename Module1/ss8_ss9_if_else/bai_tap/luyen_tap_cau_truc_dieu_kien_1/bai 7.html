@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+<script>
+    const PHICODINH = 25000
+    let soTien ='';
+    let soPhutSuDung = parseInt(prompt('Nhập số phút đã sử dụng'));
+    if (soPhutSuDung > 200) {
+        soTien = (soPhutSuDung - 200) * 200 + 150 * 400 + 50 * 600;
+    } else if (soPhutSuDung > 50) {
+        soTien = (soPhutSuDung - 50) * 400 + 50 * 600;
+    } else {
+        soTien = soPhutSuDung * 600;
+    }
+    let tongPhi = soTien + PHICODINH;
+    alert("Bạn đã gọi hết " + soPhutSuDung +' phút và ' + 'số tiền bạn phải nộp là: ' + tongPhi + ' nghìn đồng');
+</script>
+</body>
+</html>

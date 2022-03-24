@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<script>
+    let doanhSo = parseFloat(prompt('Nhập doanh số'));
+    if (doanhSo <= 100) {
+        hoaHong = doanhSo * (5 / 100);
+        alert('Hoa hồng của bạn là: ' + hoaHong)
+    } else if (doanhSo <= 300) {
+        hoaHong = doanhSo * (10 / 100)
+        alert('Hoa hồng của bạn là: ' + hoaHong);
+    } else if (doanhSo > 300) {
+        hoaHong = doanhSo * (20 / 100);
+        alert('Hoa hồng của bạn là: ' + hoaHong)
+    }
+</script>
+</body>
+</html>

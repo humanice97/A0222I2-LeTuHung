@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let diemKiemTra = parseFloat(prompt('Mời bạn nhập điểm kiểm tra'))
+    let diemGiuaKy = parseFloat(prompt('Mời bạn nhập điểm giữa kỳ'))
+    let diemCuoiKy = parseFloat(prompt('Mời bạn nhập điểm cuối kỳ'))
+    let diemTrungBinh = (diemKiemTra + diemGiuaKy + diemCuoiKy)/3
+    if (diemTrungBinh >= 9) {
+        alert('Đạt loại giỏi!')
+    } else if (diemTrungBinh >= 7) {
+        alert('Đạt loại khá!')
+    } else if (diemTrungBinh >= 5) {
+        alert('Đạt loại trung bình!')
+    } else if (diemTrungBinh >= 3) {
+        alert('Đạt loại yếu!')
+    } else {
+        alert('Đạt loại kém!')
+    }
+
+</script>
+</body>
+</html>
