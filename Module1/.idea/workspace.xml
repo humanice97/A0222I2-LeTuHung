@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fc2a360-cef6-4c43-8151-ed2949aa85af" name="Default Changelist" comment="" />
+    <list default="true" id="2fc2a360-cef6-4c43-8151-ed2949aa85af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss8_ss9_if_else/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_ss9_if_else/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_ss9_if_else/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_ss9_if_else/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_ss9_if_else/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/Chuyen_doi_tien_te.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieudulieu_toantu/bai_tap/Chuyen_doi_tien_te.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_ss9_if_else/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_ss9_if_else/bai_tap/luyen_tap_cau_truc_dieu_kien_2/bai7.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +105,14 @@
       <workItem from="1647693121011" duration="47000" />
       <workItem from="1647698428526" duration="2794000" />
       <workItem from="1647701331379" duration="138000" />
+      <workItem from="1647704083597" duration="600000" />
+      <workItem from="1647866827943" duration="4021000" />
+      <workItem from="1647875079761" duration="2077000" />
+      <workItem from="1647957801370" duration="2166000" />
+      <workItem from="1648014813993" duration="4644000" />
+      <workItem from="1648032127360" duration="13400000" />
+      <workItem from="1648050036741" duration="2888000" />
+      <workItem from="1648121749220" duration="9607000" />
     </task>
     <servers />
   </component>
@@ -130,9 +147,9 @@
       <screen x="0" y="0" width="1366" height="720" />
     </state>
     <state x="492" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.720@0.0.1366.720" timestamp="1647048811751" />
-    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1646830017334">
+    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1648052279631">
       <screen x="0" y="0" width="1366" height="720" />
     </state>
-    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1366.720@0.0.1366.720" timestamp="1646830017334" />
+    <state x="346" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1366.720@0.0.1366.720" timestamp="1648052279631" />
   </component>
 </project>

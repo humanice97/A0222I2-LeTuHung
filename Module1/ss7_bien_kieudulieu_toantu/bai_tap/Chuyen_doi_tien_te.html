@@ -47,11 +47,11 @@
              if (select1 == select2) {
                  document.getElementById('result').innerHTML = "Result = " + tien
              }
-             if (select1 == 'a' && select2 == 'b') {
+             else if (select1 == 'a' && select2 == 'b') {
                  let vndtousd = (tien / 23000);
                  document.getElementById('result').innerHTML = "Result = " + vndtousd
              }
-             if (select1 == 'b' && select2 == 'a') {
+             else if (select1 == 'b' && select2 == 'a') {
                  let usdtovnd = (tien * 23000);
                  document.getElementById('result').innerHTML = 'Result = ' + usdtovnd
              }

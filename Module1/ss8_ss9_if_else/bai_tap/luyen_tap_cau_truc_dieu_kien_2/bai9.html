@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Mời nhập a'));
+    let b = parseFloat(prompt('Mời nhập b'));
+    let c = parseFloat(prompt('Mời nhập c'));
+    // if (a > 0 || b > 0 || c > 0) {
+    //     if (a + b > c) {
+    //         if (b + c > a) {
+    //             if (a + c > b) {
+    //                 alert(a + ',' + b + ',' + c + ' là cạnh của một tam giác')
+    //             } else {
+    //                 alert(a + ',' + b + ',' + c + ' không là cạnh của một tam giác')
+    //             }
+    //         } else {
+    //             alert(a + ',' + b + ',' + c + ' không là cạnh của một tam giác')
+    //         }
+    //     } else {
+    //         alert(a + ',' + b + ',' + c + ' không là cạnh của một tam giác')
+    //     }
+    // } else {
+    //     alert(a + ',' + b + ',' + c + ' không là cạnh của một tam giác')
+    // }
+    if( a + b > c && b + c > a && a + c > b){
+        alert(a + ',' + b + ',' + c + ' là cạnh của một tam giác');
+    } else {
+        alert(a + ',' + b + ',' + c + ' không là cạnh của một tam giác')
+    }
+</script>
+</body>
+</html>

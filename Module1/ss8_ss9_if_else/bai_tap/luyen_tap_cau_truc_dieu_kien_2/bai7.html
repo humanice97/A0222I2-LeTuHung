@@ -5,6 +5,24 @@
     <title>bai7</title>
 </head>
 <body>
-
+<script>
+    let x1 = '';
+    let x2 = '';
+    let a = parseFloat(prompt('Mời nhập a'));
+    let b = parseFloat(prompt('Mời nhập b'));
+    let c = parseFloat(prompt('Mời nhập c'));
+    let delta = Math.pow(b, 2) - 4 * a * c;
+    if (delta < 0) {
+        alert('Phương trình vô nghiệm: x1= 0 , x2= 0')
+    } else if (delta === 0) {
+        x1 = x2 = -b / (2 * a);
+        alert('Phương trình có nghiệm kép: x1= ' + x1 + ',  x2= ' + x2);
+    } else {
+        delta = Math.sqrt(delta);
+        x1 = (-b + delta) / (2 * a);
+        x2 = (-b - delta) / (2 * a);
+        alert('Phương trình có 2 nghiệm phân biệt: x1= ' + x1 + ', x2= ' + x2);
+    }
+</script>
 </body>
 </html>
