@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let nhietDo = parseFloat(prompt('Mời nhập nhiệt độ: '));
+    for (let i = 1; i < nhietDo; i++) {
+        if (nhietDo >= 100) {
+            alert('Please giảm nhiệt độ xuống chớ nóng quá');
+            nhietDo = parseFloat(prompt('Mời nhập nhiệt độ: '));
+
+        } else if (nhietDo <= 20) {
+            alert('Please tăng nhiệt độ lên chớ lạnh quá');
+            nhietDo = parseFloat(prompt('Mời nhập nhiệt độ: '));
+        }
+
+    }
+    alert('Nhiệt độ bình thường');
+</script>
+</body>
+</html>

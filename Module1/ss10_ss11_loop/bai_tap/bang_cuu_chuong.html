@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bang cuu chuong</title>
+</head>
+<body>
+<script>
+    document.write("<table border='1' width='1000' cellspacing='0' cellpadding='3'>")
+    for (let row = 1; row <= 10; row++) {
+        document.write('<tr>')
+        for (let col = 2; col <= 9; col++) {
+            document.write('<td>' + col + 'x' + row + '=' + col * row + '</td>');
+
+        }
+        document.write("</tr>");
+    }
+    document.write('</table>')
+</script>
+</body>
+</html>

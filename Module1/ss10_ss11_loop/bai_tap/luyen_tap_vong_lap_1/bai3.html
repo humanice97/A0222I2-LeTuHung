@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('nhập n dãy số fibonacci'));
+    let a = 1;
+    let b = 1;
+    let output = '';
+    for (let i = 1; i < n; i++) {
+        if (i == 1 || i == 2) {
+            output += '1 ';
+            a = 1;
+            b = 1;
+            continue;
+        }
+        let c = a + b;
+        output += c + ' ';
+        a = b;
+        b = c;
+
+    }
+    document.write(output);
+
+
+</script>
+</body>
+</html>
