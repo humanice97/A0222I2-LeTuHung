@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let numArr = [3, 2, 1, 8, 32, -10, 22, 100, 28, -12];
+    let avgNum = 0;
+    let max = [0];
+    for (let i = 0; i < numArr.length; i++) {
+        if (numArr[i] > max) {
+            max = numArr[i];
+        }
+        avgNum += (numArr[i]/numArr.length)
+    }
+    document.write('Số lớn nhất trong mảng là : ' + max + '<br>');
+    document.write('Trung bình các phần tử trong mảng : ' + avgNum)
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu dien</title>
+</head>
+<body>
+<label for="inputEng">Input:</label>
+<input id="inputEng" type="text">
+<button onclick="Search()">Search</button>
+<p id="result"></p>
+<script>
+    let arrEng = ["hello", "game", "survey"];
+    let arrVN = ["xin chào", "trò chơi", "đo đạc"];
+
+    function Search() {
+        let result = "";
+
+        /*B1: lấy giá trị của ô input tiếng Anh*/
+        let keyWord = document.getElementById("inputEng").value;
+
+        /*B2: tìm index của từ khóa mà người dùng nhập.*/
+        let index = arrEng.indexOf(keyWord);
+        if (index != -1) {
+            /*tìm ra thì index != -1*/
+            result = arrVN[index];
+        } else {
+            result = "Không tìm thấy dữ liệu"
+        }
+
+        /*B3: hiển thị kết quả*/
+        document.getElementById("result").innerText = result;
+    }
+
+</script>
+</body>
+</html>

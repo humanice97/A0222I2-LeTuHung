@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhập n phần tử trong mảng'));
+    let m = parseInt(prompt('Nhập m phần tử trong mảng'));
+    let myArr = [];
+    let myArr2 = [];
+    flg = false
+    for (let i = 0; i < n; i++) {
+        myArr[i] = prompt('Nhập ' + n + ' phần tử vào mảng 1:')
+    }
+    for (let j = 0; j < n; j++) {
+        myArr2[j] = prompt('Nhập ' + m + ' phần tử vào mảng 2:')
+    }
+    document.write('Mảng 1 là: ' + myArr + '<br>');
+    document.write('Mảng 2 là: ' + myArr2 + '<br>');
+    for (let i = 0; i < myArr.length; i++) {
+        for (let j = 0; j < myArr2.length; j++) {
+            if (myArr[i] === myArr2[j]) {
+                flg = true;
+            } else {
+                flg = false;
+            }
+        }
+    }
+    if (flg) {
+        document.write('Hai mảng giống nhau')
+    } else {
+        document.write('Hai mảng không giống nhau')
+    }
+</script>
+</body>
+</html>

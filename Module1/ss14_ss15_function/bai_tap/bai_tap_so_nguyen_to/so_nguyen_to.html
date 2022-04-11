@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so nguyen to</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        if (number < 2) {
+            return false
+        }
+        for (let i = 2; i < Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let snt = parseInt(prompt('Nhạp số nguyên tố cần kiểm tra: '));
+    let checkSNT = isPrime(snt);
+
+    if (checkSNT) {
+        alert('Số ' + snt + ' là SNT');
+    } else {
+        alert('Số ' + snt + ' không phải SNT');
+    }
+
+</script>
+</body>
+</html>

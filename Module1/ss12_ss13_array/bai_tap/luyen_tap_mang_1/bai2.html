@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let numArr = [-3, -2, -1, -8, -32, -10, -22, 100, -28, -12];
+    let locationNum = 0;
+    let max = [0];
+    for (let i = 0; i < numArr.length; i++) {
+        if (numArr[i] > max) {
+            max = numArr[i];
+            locationNum = i
+        }
+    }
+    document.write('Số lớn nhất trong mảng là : ' + max + '<br>');
+    document.write('Vị trí trong mảng là : ' + locationNum)
+</script>
+</body>
+</html>

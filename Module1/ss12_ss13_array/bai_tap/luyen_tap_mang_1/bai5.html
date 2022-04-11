@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let myArr = [];
+    let soNgAm = ''
+    for (let i = 0; i < 5; i++) {
+        myArr[i] = parseInt(prompt('Nhập chuỗi:'));
+    }
+    document.write("Mảng là : " + myArr);
+    for (let i = 0; i < myArr.length; i++) {
+        if (myArr[i] < 0) {
+            soNgAm += myArr[i];
+        }
+    }
+    document.write('<br>')
+    document.write('số nguyên âm trong chuỗi là: ' + soNgAm)
+</script>
+</body>
+</html>

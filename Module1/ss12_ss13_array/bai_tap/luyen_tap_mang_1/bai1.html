@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let numArr = [];
+    let numArrhon10 = [];
+    for (let i = 0; i < 10; i++) {
+        numArr[i] = parseInt(prompt('Input number array'));
+    }
+    alert('Array =' + numArr);
+    for (let i = 0; i < numArr.length; i++) {
+        if (numArr[i] >= 10) {
+            numArrhon10.push(numArr[i]);
+        }
+    }
+    document.write('số lớn hơn hoặc bằng 10 là :' + numArrhon10)
+</script>
+</body>
+</html>

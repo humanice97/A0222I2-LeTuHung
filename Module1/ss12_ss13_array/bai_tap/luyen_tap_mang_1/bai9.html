@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let myArr1 = [];
+    let myArr2 = [];
+    let myArr3 = [];
+    for (let i = 0; i < 10; i++) {
+        myArr1[i] = parseInt(prompt('Nhập mảng a: '));
+    }
+    for (let j = 0; j < 10; j++) {
+        myArr2[j] = parseInt(prompt('Nhập mảng b: '));
+    }
+    document.write('Mảng 1 là : ' + myArr1 + '<br>');
+    document.write('Mảng 2 là : ' + myArr2 + '<br>');
+    myArr3 = myArr1
+    for (let k = 0; k < myArr2.length; k++) {
+        myArr3.push(myArr2[k])
+    }
+    document.write(myArr3)
+
+
+</script>
+</body>
+</html>

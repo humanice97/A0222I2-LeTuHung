@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhập n phần tử trong mảng'));
+    let myArr = [];
+    for (let i = 0; i < n; i++) {
+        myArr[i] =prompt('Nhập ' + n + ' phần tử vào mảng:')
+    }
+    document.write('Mảng là: ' + myArr + '<br>');
+    for (let i = 0; i < myArr.length; i++) {
+        document.write('Chuỗi \"' + myArr[i] + '\" có ' + myArr[i].length + ' ký tự trong mảng' + '<br>')
+    }
+
+</script>
+</body>
+</html>
