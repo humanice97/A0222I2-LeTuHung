@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    // function checkMin(a, b, c) {
+    //     if (a < b && a < c) {
+    //         alert('Số nhỏ nhất là a ');
+    //     } else if (b < c) {
+    //         alert('Số nhỏ nhất là b');
+    //     } else {
+    //         alert('Số nhỏ nhất là c')
+    //     }
+    // }
+    // let a = parseInt(prompt('Nhập'))
+    // let b = parseInt(prompt('Nhập'))
+    // let c = parseInt(prompt('Nhập'))
+    // checkMin(a,b,c)
+    function checkMin(number) {
+        let min = arrNum[0];
+        for (let i = 0; i < number.length; i++) {
+            if(min > arrNum[i]) {
+                min = arrNum[i];
+            }
+        }
+        return min;
+    }
+    let arrNum = [];
+    for(let i = 0; i < 3; i++) {
+        arrNum[i] = parseInt(prompt("Nhập vào số thứ " + i + " là: "));
+    }
+    document.write('Dãy số là : ' + arrNum + "<br>");
+    document.write("Số nhỏ nhất là: " + checkMin(arrNum));
+</script>
+</body>
+</html>

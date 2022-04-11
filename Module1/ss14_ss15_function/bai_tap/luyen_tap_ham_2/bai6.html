@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<script>
+    function checkSND(x) {
+        if (x >= 0 && x % 2 === 0) {
+            return true;
+        }
+        return false
+
+    }
+
+    let a = parseInt(prompt('Nhập vào một số bất kỳ'));
+    if (checkSND(a)) {
+        alert('Số vừa nhập là số nguyên dương');
+    } else {
+        alert('Số vừa nhập không phải là số nguyên dương')
+    }
+</script>
+</body>
+</html>

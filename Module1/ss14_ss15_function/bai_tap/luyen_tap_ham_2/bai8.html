@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<script>
+    function reverseNum(a) {
+        let last = a.length - 1;
+        for (let i = 0; i < last; i++) {
+            let temp = a[i];
+            a[i] = a[last];
+            a[last] = temp;
+            last--;
+        }
+        return a;
+    }
+
+    let n = parseInt(prompt('Nhập vào độ dài mảng'));
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt('Nhập vào mảng phẩn tử thứ: ' + (i+1)));
+    }
+    document.write("Mảng là : " + arr + '<br>');
+    document.write('Mảng sau khi đổi ngược là : ' + reverseNum(arr));
+
+</script>
+</body>
+</html>

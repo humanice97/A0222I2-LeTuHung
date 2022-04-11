@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    function numberFactorial(number) {
+        let giaiThua = 1;
+        if (number >= 1) {
+            for (let i = 1; i <= number; i++) {
+                giaiThua *= i;
+            }
+        } else if (number === 0) {
+            giaiThua = 1;
+        } else {
+            return 'Giá trị ko xác định';
+        }
+        return giaiThua;
+    }
+    let m = prompt('Nhập số nguyên giai thừa: ');
+    let ketQuaGT = numberFactorial(m);
+    document.write("Giai thừa của " + m + "! = " + ketQuaGT);
+
+
+</script>
+</body>
+</html>

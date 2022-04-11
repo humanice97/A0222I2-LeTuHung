@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    function checkKyTu(a) {
+        if (a % 2 === 0 || a % 2 === 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let a = prompt('Nhập vào một chuỗi ký tự: ');
+    if (checkKyTu(a)){
+        alert('Đây là kí tự số');
+    } else {
+        alert('Đây là kí tự')
+    }
+</script>
+</body>
+</html>
