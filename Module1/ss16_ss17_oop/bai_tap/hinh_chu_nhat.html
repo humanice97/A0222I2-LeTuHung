@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinh chu nhat</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500px" height="300px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Rectangle {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+
+        dienTich() {
+            return this.dai * this.rong;
+        }
+
+        chuVi() {
+            return 2 * (this.dai + this.rong);
+        }
+
+        veCanvas() {
+            let a = document.getElementById("myCanvas");
+            let ctx = a.getContext("2d");
+            ctx.fillStyle = "#ff0000";
+            ctx.fillRect(0, 0, dai, rong);
+        }
+    }
+
+    let dai = parseInt(prompt('Moi nhap chieu dai'));
+    let rong = parseInt(prompt("Moi nhap chieu rong"));
+    let rectangle = new Rectangle(dai, rong);
+    rectangle.veCanvas();
+    document.write('<br>' + 'Chiều dài là: ' + rectangle.dai + '<br>')
+    document.write('Chiều rộng là: ' + rectangle.rong + "<br>");
+    document.write('Diện tích HCN là: ' + rectangle.dienTich() + "<br>");
+    document.write('Chu vi HCN là: ' + rectangle.chuVi() + "<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mo ta temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(C) {
+            this.C = C;
+        }
+
+        changeCtoF() {
+            return ((9 * this.C) / 5) + 32;
+        }
+
+        changeCtoK() {
+            return this.C + 273;
+        }
+    }
+
+    let inputC = parseFloat(prompt('Moi nhap nhiet do C can doi : '));
+    let temperature = new Temperature(inputC);
+    document.write("Nhiệt độ " + temperature.C + " C = " + temperature.changeCtoF() + " F <br>");
+    document.write("Nhiệt độ " + temperature.C + " C = " + temperature.changeCtoK() + " K");
+</script>
+</body>
+</html>

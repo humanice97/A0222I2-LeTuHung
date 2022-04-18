@@ -20,20 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc2a360-cef6-4c43-8151-ed2949aa85af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_1/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_1/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_1/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/luyen_tap_ham_2/bai9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16_ss17_oop/bai_tap/Mo_ta_temperature.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16_ss17_oop/bai_tap/hinh_chu_nhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16_ss17_oop/thuc_hanh/Xay_dung_hinh_tron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16_ss17_oop/thuc_hanh/Xay_dung_lop_date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss16_ss17_oop/thuc_hanh/funny circle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/bai_tap_so_nguyen_to/so_nguyen_to.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_ss15_function/bai_tap/bai_tap_so_nguyen_to/so_nguyen_to.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,15 +58,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ss5_form_table/thuc_hanh" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\A0222I2-LeTuHung\Module1\ss5_form_table\thuc_hanh" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A0222I2-LeTuHung\Module1\ss14_ss15_function\bai_tap" />
       <recent name="D:\A0222I2-LeTuHung\Module1" />
       <recent name="D:\A0222I2-LeTuHung\Module1\ss7_bien_kieudulieu_toantu\thuc_hanh\bien_kieudulieu" />
       <recent name="D:\A0222I2-LeTuHung\Module1\ss7_bien_kieudulieu_toantu\thuc_hanh" />
       <recent name="D:\A0222I2-LeTuHung\Module1\ss4_git_html\thuc_hanh" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\A0222I2-LeTuHung\Module1\ss5_form_table\thuc_hanh" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="funny circle.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module1/ss16_ss17_oop/thuc_hanh/funny circle.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.funny circle.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -134,7 +138,10 @@
       <workItem from="1649241408251" duration="7662000" />
       <workItem from="1649414528527" duration="9248000" />
       <workItem from="1649427314431" duration="243000" />
-      <workItem from="1649657910166" duration="14935000" />
+      <workItem from="1649657910166" duration="14980000" />
+      <workItem from="1649846688773" duration="11230000" />
+      <workItem from="1650024958808" duration="7466000" />
+      <workItem from="1650240940813" duration="1502000" />
     </task>
     <servers />
   </component>

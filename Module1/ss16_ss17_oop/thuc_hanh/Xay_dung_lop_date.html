@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay dung lop date</title>
+</head>
+<body>
+<script>
+    class MyDate {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year
+        }
+
+        setDay(day) {
+            this.day = day;
+        }
+
+        setMonth(month) {
+            this.month = month;
+        }
+
+        setYear(year) {
+            this.year = year;
+        }
+    }
+
+    let date = new MyDate(2, 2, 2007);
+    // date.getDay()
+    // date.getMonth()
+    // date.getYear()
+    date.setDay(10);
+    date.setMonth(10);
+    date.setYear(2019);
+
+    let day = date.getDay();
+    let month = date.getMonth();
+    let year = date.getYear();
+
+
+    alert(day + "/" + month + "/" + year);
+
+    let setDate = confirm("bạn có muốn thay đổi ngày tháng năm không?");
+    if (setDate) {
+        let a = prompt("Nhập ngày");
+        let b = prompt("Nhập tháng");
+        let c = prompt("Nhập năm");
+        let newDate = new MyDate(a, b, c)
+        newDate.getDay()
+        newDate.getMonth()
+        newDate.getYear()
+        let day = newDate.getDay();
+        let month = newDate.getMonth();
+        let year = newDate.getYear();
+        alert(day + "/" + month + "/" + year);
+
+    }
+
+</script>
+</body>
+</html>
