@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cong tac den</title>
+</head>
+<body>
+<script>
+    class ElectricLamp {
+        constructor() {
+            this.status = false
+        }
+
+        turnOn() {
+            this.status = true;
+            return this.status
+        }
+
+        turnOff() {
+            this.status = false;
+            return this.status;
+        }
+    }
+
+    class SwitchButton {
+        constructor(status, lamp) {
+            this.status = status;
+            // this.lamp = lamp;
+        }
+
+        connectToLamp(electric) {
+            this.electric = electric;
+            if (this.status === true && this.electric === true) {
+                document.write('Da bat dien va den da sang' + '<br>');
+                console.log('Chua bat cong tac den' + '<br>');
+            } else if (this.status === false && this.electric === true) {
+                document.write('Chua cam dien ' + '<br>');
+                console.log('Chua bat cong tac den' + '<br>');
+            } else if (this.status === true && this.electric === false) {
+                document.write('Chua bat cong tac den' + '<br>');
+                console.log('Chua bat cong tac den' + '<br>');
+            } else {
+                document.write('Chua bat cong tac den va chua cam dien' + '<br>');
+                console.log('Chua bat cong tac den va chua cam dien' + '<br>');
+            }
+        }
+
+        switchOff() {
+            this.status = false;
+            return this.status;
+        }
+
+        switchOn() {
+            this.status = true;
+            return this.status;
+        }
+
+    }
+
+    let den = new ElectricLamp();
+    let on_and_off = den.turnOff();
+    let dien = new SwitchButton();
+    dien.switchOn();
+    dien.connectToLamp(on_and_off);
+
+    on_and_off = den.turnOff();
+    dien.switchOn();
+    dien.connectToLamp(on_and_off);
+
+    on_and_off = den.turnOff();
+    dien.switchOff();
+    dien.connectToLamp(on_and_off);
+
+    on_and_off = den.turnOn();
+    dien.switchOff();
+    dien.connectToLamp(on_and_off);
+
+    on_and_off = den.turnOn();
+    dien.switchOn();
+    dien.connectToLamp(on_and_off);
+
+    on_and_off = den.turnOff();
+    dien.switchOff();
+    dien.connectToLamp(on_and_off);
+
+    on_and_off = den.turnOn();
+    dien.switchOff();
+    dien.connectToLamp(on_and_off);
+
+    on_and_off = den.turnOn();
+    dien.switchOn();
+    dien.connectToLamp(on_and_off);
+</script>
+</body>
+</html>
