@@ -23,7 +23,7 @@ public class ThemPhanTuVaoMang {
         for (int i = 0; i < array.length; i++) {
             tmp[i] = array[i];
         }
-        for (int i = array.length; i > index; i--) {
+        for (int i = tmp.length - 1; i > index; i--) {
             if (i != index) {
                 tmp[i] = array[i - 1];
             }
