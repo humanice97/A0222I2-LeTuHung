@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Point point = new Point(1.3f, 5.2f);
-        System.out.println(point);
+        System.out.println("Before: "+point);
         point.setXY(3, 2);
-        System.out.println(Arrays.toString(point.getXY()));
+        System.out.println("Change: "+Arrays.toString(point.getXY()));
+        System.out.println("After: "+point);
 
         MovablePoint movablePoint = new MovablePoint(1.3f, 3.2f, 2, 2);
         System.out.println(movablePoint);
