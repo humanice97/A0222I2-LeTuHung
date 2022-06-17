@@ -1,4 +1,4 @@
-package ss12_java_collection_framework.bai_tap.arraylist_linkedlist_on_java_collection_framework;
+package ss12_java_collection_framework.bai_tap.arraylist_linkedlist_on_java_collection_framework.linkedlist_product_mananger;
 
 public class Product {
     private String name;
@@ -38,12 +38,15 @@ public class Product {
         this.price = price;
     }
 
+
     @Override
     public String toString() {
         return "PRODUCT{" +
-                "Name='" + name + '\'' +
+                "NAME='" + name + '\'' +
                 ", ID='" + id + '\'' +
-                ", Price=" + price +
+                ", PRICE=" + price +
                 '}';
     }
+
+
 }

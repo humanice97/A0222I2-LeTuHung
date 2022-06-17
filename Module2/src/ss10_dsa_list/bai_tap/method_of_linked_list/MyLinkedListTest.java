@@ -12,7 +12,7 @@ public class MyLinkedListTest {
         myLinkedList.add(2, 88);
         //show list after adding
         System.out.println("Current list:");
-        myLinkedList.printList();
+      myLinkedList.printList();
         System.out.println("\n" +"Current size of list: " + myLinkedList.size());
         System.out.println("Index off element [100] in list: " + myLinkedList.indexOf(100));
         System.out.println("Index off element [33] in list: " + myLinkedList.indexOf(33));
