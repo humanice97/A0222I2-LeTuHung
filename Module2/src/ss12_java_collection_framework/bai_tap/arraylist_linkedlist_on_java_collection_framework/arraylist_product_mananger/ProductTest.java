@@ -9,9 +9,15 @@ public class ProductTest {
         Scanner scanner = new Scanner(System.in);
         int choose = -1;
         while (choose != 0) {
-
             System.out.println("Select Option");
-
+            System.out.println("1 - Add Product");
+            System.out.println("2 - Edit Product");
+            System.out.println("3 - Remove Product");
+            System.out.println("4 - Display Product");
+            System.out.println("5 - Search by Name Product");
+            System.out.println("6 - Sort Ascending");
+            System.out.println("7 - Sort Descending");
+            System.out.println("0 - Exit");
             choose = Integer.parseInt(scanner.nextLine());
             switch (choose) {
                 case 1:
@@ -39,7 +45,8 @@ public class ProductTest {
                     System.out.println("Exited");
                     break;
                 default:
-                    break;
+                    System.out.println("Please Choose: ");
+
             }
         }
     }

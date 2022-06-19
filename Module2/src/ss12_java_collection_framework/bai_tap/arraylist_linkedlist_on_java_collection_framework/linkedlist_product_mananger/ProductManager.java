@@ -148,7 +148,5 @@ public class ProductManager<E> extends Product {
         for (Product x : productList1s) {
             System.out.println(x);
         }
-
-
     }
 }

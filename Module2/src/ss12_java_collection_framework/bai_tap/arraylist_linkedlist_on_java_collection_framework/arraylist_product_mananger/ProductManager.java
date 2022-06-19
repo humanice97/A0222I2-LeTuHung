@@ -42,18 +42,23 @@ public class ProductManager<E> extends Product {
         System.out.println("REMOVE PRODUCT");
         System.out.println("Choose ID remove: ");
         String id = scanner.nextLine();
+        boolean check = false;
         for (int i = 0; i < productLists.size(); i++) {
             if (productLists.get(i).getId().equals(id)) {
                 productLists.remove(i);
+                check = true;
                 break;
             }
-
+        }
+        if (!check){
+            System.out.println("Not found ID");
         }
     }
 
     public void editProduct() {
         System.out.println("EDIT PRODUCT");
         System.out.println("Choose id edit product ");
+        boolean check = false;
         String id = scanner.nextLine();
         for (int i = 0; i < productLists.size(); i++) {
             if (productLists.get(i).getId().equals(id)) {
@@ -66,9 +71,12 @@ public class ProductManager<E> extends Product {
                 productLists.get(i).setName(newName);
                 productLists.get(i).setId(newID);
                 productLists.get(i).setPrice(newPrice);
+                check = true;
                 break;
             }
-
+        }
+        if(!check){
+            System.out.println("Not found ID");
         }
     }
     public void searchNameProduct(){
@@ -128,7 +136,6 @@ public class ProductManager<E> extends Product {
         int length = productList1s.size();
         boolean haveSwap;
         for (int i = 0; i < length; i++) {
-
             haveSwap = false;
             for (int j = 0; j < length; j++) {
                 if (productList1s.get(i).getPrice() < productList1s.get(j).getPrice()) {
