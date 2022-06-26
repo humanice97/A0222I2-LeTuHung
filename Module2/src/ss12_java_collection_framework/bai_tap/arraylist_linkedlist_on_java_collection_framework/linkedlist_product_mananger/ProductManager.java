@@ -6,23 +6,19 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ProductManager<E> extends Product {
+    Validation validation1 = new Validation();
     public static Scanner scanner = new Scanner(System.in);
     public LinkedList<Product> productLinkedList = new LinkedList<>();
 
+
     public ProductManager() {
-        productLinkedList.add(new Product("iPhone 13", "Apple", 1200));
-        productLinkedList.add(new Product("Galaxy S20 Ultra", "SamSung", 1300));
-        productLinkedList.add(new Product("N20", "Nokia", 1000));
-        productLinkedList.add(new Product("BlackShark", "Xiaomi", 1200));
-        productLinkedList.add(new Product("iPhone 5s", "Apple", 550));
-        productLinkedList.add(new Product("Note 20", "SamSung", 1100));
     }
 
     public void displayProduct() {
         System.out.println("List Product: ");
         for (Product item : productLinkedList)
             if (item != null) {
-                System.out.println(item.toString());
+                System.out.println(item);
             }
     }
 
@@ -30,20 +26,24 @@ public class ProductManager<E> extends Product {
         System.out.println("ADD PRODUCT");
         System.out.println("Add name product: ");
         String name = scanner.nextLine();
-        System.out.println("Add ID product: ");
-        String id = scanner.nextLine();
         System.out.println("Add Price product: ");
-        double price = Double.parseDouble(scanner.nextLine());
-        productLinkedList.add(new Product(name, id, price));
-        System.out.println("add success");
+        double price = validation1.checkInputDouble();
+        System.out.println("Add success");
+//        int lastId = 0;
+//        if (productLinkedList.size() > 0) {
+//            lastId = productLinkedList.get(productLinkedList.size() - 1).getId();
+//        }
+        Product product = new Product(name, price);
+        productLinkedList.add(product);
+
     }
 
     public void removeProduct() {
         System.out.println("REMOVE PRODUCT");
         System.out.println("Choose ID remove: ");
-        String id = scanner.nextLine();
+        int id = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < productLinkedList.size(); i++) {
-            if (productLinkedList.get(i).getId().equals(id)) {
+            if (productLinkedList.get(i).getId() == id) {
                 productLinkedList.remove(i);
                 break;
             }
@@ -54,13 +54,13 @@ public class ProductManager<E> extends Product {
     public void editProduct() {
         System.out.println("EDIT PRODUCT");
         System.out.println("Choose id edit product ");
-        String id = scanner.nextLine();
+        int id = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < productLinkedList.size(); i++) {
-            if (productLinkedList.get(i).getId().equals(id)) {
+            if (productLinkedList.get(i).getId() == id) {
                 System.out.println("set new Name:");
                 String newName = scanner.nextLine();
                 System.out.println("Set new ID: ");
-                String newID = scanner.nextLine();
+                int newID = Integer.parseInt(scanner.nextLine());
                 System.out.println("Set new Price: ");
                 double newPrice = Double.parseDouble(scanner.nextLine());
                 productLinkedList.get(i).setName(newName);
@@ -71,12 +71,13 @@ public class ProductManager<E> extends Product {
 
         }
     }
-    public void searchNameProduct(){
+
+    public void searchNameProduct() {
         System.out.println("SEARCH NAME PRODUCT");
         System.out.println("Enter name:");
         String search = scanner.nextLine();
-        for (int i = 0; i < productLinkedList.size() ; i++) {
-            if (productLinkedList.get(i).getName().equals(search)){
+        for (int i = 0; i < productLinkedList.size(); i++) {
+            if (productLinkedList.get(i).getName().equals(search)) {
                 System.out.println(productLinkedList.get(i).toString());
             }
         }
@@ -149,4 +150,5 @@ public class ProductManager<E> extends Product {
             System.out.println(x);
         }
     }
+
 }

@@ -1,8 +1,9 @@
 package ss12_java_collection_framework.bai_tap.arraylist_linkedlist_on_java_collection_framework.linkedlist_product_mananger;
 
 public class Product {
+    public static int count = 1;
     private String name;
-    private String id;
+    private int id;
     private double price;
 
     public Product() {
@@ -16,11 +17,11 @@ public class Product {
         this.name = name;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -32,9 +33,9 @@ public class Product {
         this.price = price;
     }
 
-    public Product(String name, String id, double price) {
+    public Product(String name, double price) {
         this.name = name;
-        this.id = id;
+        this.id = count++;
         this.price = price;
     }
 
