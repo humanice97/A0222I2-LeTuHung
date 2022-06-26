@@ -1,4 +1,4 @@
-package ss13_search_algorithm.bai_tap;
+package ss13_search_algorithm.bai_tap.search_string;
 
 import java.util.LinkedList;
 import java.util.Scanner;
