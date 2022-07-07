@@ -14,6 +14,5 @@ public class TestReadAndWriteFile {
         System.out.println("Input path file txt out: ");
         String filePathOut = scanner.nextLine();
         readAndWriteFile.writeFile(filePathOut,maxValue);
-
     }
 }

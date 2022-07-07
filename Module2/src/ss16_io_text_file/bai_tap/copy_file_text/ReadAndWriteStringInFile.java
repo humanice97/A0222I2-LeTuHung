@@ -41,6 +41,5 @@ public class ReadAndWriteStringInFile {
         } catch (IOException e) {
             System.out.println("The copy file is not found !");
         }
-
     }
 }
