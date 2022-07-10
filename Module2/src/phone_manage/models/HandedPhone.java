@@ -1,4 +1,4 @@
-package phone_manage;
+package phone_manage.models;
 
 public class HandedPhone extends Phone {
     private String country;
@@ -31,9 +31,13 @@ public class HandedPhone extends Phone {
 
     @Override
     public String toString() {
-        return "HandedPhone{" + makeText() +
+        return "HandedPhone{" + super.toString() +
                 ", country= '" + country + '\'' +
                 ", status= '" + status + '\'' +
                 "} ";
+    }
+
+    public String makeText() {
+        return super.makeTexts() + "," + country + "," + status;
     }
 }

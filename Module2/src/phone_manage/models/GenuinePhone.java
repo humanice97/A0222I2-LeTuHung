@@ -1,4 +1,4 @@
-package phone_manage;
+package phone_manage.models;
 
 public class GenuinePhone extends Phone {
     private int warrantyPeriod;
@@ -31,9 +31,13 @@ public class GenuinePhone extends Phone {
 
     @Override
     public String toString() {
-        return "Genuine{" + makeText() +
+        return "Genuine{" + super.toString() +
                 ", warrantyPeriod= " + warrantyPeriod +
                 ", warrantyCode= " + warrantyCode +
                 "} ";
+    }
+
+    public String makeText() {
+        return super.makeTexts() + "," + warrantyPeriod + "," + warrantyCode;
     }
 }

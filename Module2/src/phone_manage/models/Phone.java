@@ -1,4 +1,4 @@
-package phone_manage;
+package phone_manage.models;
 
 public abstract class Phone {
     public static int count = 1;
@@ -51,14 +51,14 @@ public abstract class Phone {
 
     @Override
     public String toString() {
-        return "Phone{" +
-                "id=" + id +
+        return "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
-                ", company='" + company + '\'' +
-                '}';
+                ", company='" + company + '\'';
     }
-    public String makeText(){
-        return "id = " + getId() + ", name = " + getName() + ", price = " + getPrice() + ", company = " + getCompany();
+
+    public String makeTexts() {
+        return id + "," + name + "," + price + "," + company;
     }
 }
+
