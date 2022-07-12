@@ -1,6 +1,7 @@
 package phone_manage.controller;
 
 import phone_manage.services.impl.PhoneServices;
+import phone_manage.utils.validate.CheckSearchException;
 
 import java.util.Scanner;
 
@@ -43,7 +44,12 @@ public class PhoneMain {
                     manager.deletePhoneById();
                     break;
                 case "4":
-                    manager.searchPhoneByName();
+
+                    try {
+                        manager.searchPhoneByName();
+                    } catch (CheckSearchException e) {
+                        System.out.println(e.getMessage());
+                    }
                     break;
                 case "5":
                     System.out.println("Exited");

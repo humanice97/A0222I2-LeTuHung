@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ReadAndWritePhone {
 
-    public static void writeHandedPhone(List<HandedPhone> list, String filePath) {
+    public static void writeHandedPhone(List<HandedPhone> list, String filePath, boolean isAppend) {
         File file = new File(filePath);
         FileWriter fileWriter = null;
         BufferedWriter bw = null;
@@ -17,7 +17,7 @@ public class ReadAndWritePhone {
             if (!file.exists()) {
                 throw new FileNotFoundException("File not found");
             }
-            fileWriter = new FileWriter(file, true);
+            fileWriter = new FileWriter(file, isAppend);
             bw = new BufferedWriter(fileWriter);
             for (HandedPhone handedPhones : list) {
                 bw.write(handedPhones.makeText());
@@ -30,7 +30,7 @@ public class ReadAndWritePhone {
         }
     }
 
-    public static void writeGenuinePhone(List<GenuinePhone> list, String filePath) {
+    public static void writeGenuinePhone(List<GenuinePhone> list, String filePath, boolean isAppend) {
         File file = new File(filePath);
         FileWriter fileWriter = null;
         BufferedWriter bw = null;
@@ -38,7 +38,7 @@ public class ReadAndWritePhone {
             if (!file.exists()) {
                 throw new FileNotFoundException("File not found");
             }
-            fileWriter = new FileWriter(file, true);
+            fileWriter = new FileWriter(file, isAppend);
             bw = new BufferedWriter(fileWriter);
             for (GenuinePhone genuinePhone : list) {
                 bw.write(genuinePhone.makeText());
@@ -69,7 +69,7 @@ public class ReadAndWritePhone {
                     continue;
                 }
                 array = line.split(",");
-                handedPhone = new HandedPhone(array[1], Double.parseDouble(array[2]), array[3], array[4], array[5]);
+                handedPhone = new HandedPhone(Integer.parseInt(array[0]), array[1], Double.parseDouble(array[2]), array[3], array[4], array[5]);
                 handedPhoneList.add(handedPhone);
             }
             br.close();
@@ -98,7 +98,7 @@ public class ReadAndWritePhone {
                     continue;
                 }
                 array = line.split(",");
-                genuinePhone = new GenuinePhone(array[1], Double.parseDouble(array[2]), array[3], Integer.parseInt(array[4]), Integer.parseInt(array[5]));
+                genuinePhone = new GenuinePhone(Integer.parseInt(array[0]), array[1], Double.parseDouble(array[2]), array[3], Integer.parseInt(array[4]), Integer.parseInt(array[5]));
                 genuinePhoneList.add(genuinePhone);
             }
             br.close();

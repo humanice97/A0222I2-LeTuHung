@@ -4,8 +4,8 @@ public class GenuinePhone extends Phone {
     private int warrantyPeriod;
     private int warrantyCode;
 
-    public GenuinePhone(String name, double price, String company, int warrantyPeriod, int warrantyCode) {
-        super(name, price, company);
+    public GenuinePhone(int id, String name, double price, String company, int warrantyPeriod, int warrantyCode) {
+        super(id, name, price, company);
         this.warrantyPeriod = warrantyPeriod;
         this.warrantyCode = warrantyCode;
     }

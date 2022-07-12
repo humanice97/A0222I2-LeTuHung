@@ -4,8 +4,8 @@ public class HandedPhone extends Phone {
     private String country;
     private String status;
 
-    public HandedPhone(String name, double price, String company, String country, String status) {
-        super(name, price, company);
+    public HandedPhone(int id, String name, double price, String company, String country, String status) {
+        super(id, name, price, company);
         this.country = country;
         this.status = status;
     }
