@@ -34,15 +34,15 @@
     }
 
     function edit(index) {
-        let editName = prompt("Nhập tên mới",productList[index]);
-        productList[index] = editName;
+        let editName = prompt("Nhập tên mới",productList[QLSP]);
+        productList[QLSP] = editName;
         display(productList);
     }
 
     function deleteProduct(index) {
-        let conf = confirm("Bạn có muốn xóa sản phẩm "+ productList[index])
+        let conf = confirm("Bạn có muốn xóa sản phẩm "+ productList[QLSP])
         if (conf){
-            productList.splice(index,1);
+            productList.splice(QLSP,1);
         }
         display(productList);
     }

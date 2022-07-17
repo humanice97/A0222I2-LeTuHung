@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai3</title>
 </head>
 <body>
-$END$
+<script>
+    let numerators = [5, 2, 5];
+    let denominators = [6, 3, 4];
+
+    let max = numerators[0] / denominators[0];
+    let location1 = 0;
+    for (let i = 0; i < numerators.length; i++) {
+        let max1 = numerators[i] / denominators[i];
+        if (max1 > max) {
+            max = max1;
+            location1 = i;
+        }
+
+    }
+    document.write('Phan so lon nhat la : ' + max + ' vi tri la : ' + location1)
+
+
+</script>
 </body>
 </html>

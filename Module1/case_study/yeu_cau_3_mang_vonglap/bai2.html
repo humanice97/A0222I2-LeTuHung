@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai2</title>
 </head>
 <body>
-$END$
+<script>
+    let n = parseInt(prompt('Nhap do dai mang A'));
+    let m = parseInt(prompt('Nhap do dai mang B'));
+    let arr1 = [];
+    let arr2 = [];
+    let arrnew = [];
+    for (let i = 0; i < n; i++) {
+        arr1[i] = parseInt(prompt('Nhap phan tu thu ' + (i + 1) + ' cua mang A'));
+    }
+    for (let i = 0; i < m; i++) {
+        arr2[i] = parseInt(prompt('Nhap phan tu thu ' + (i + 1) + ' cua mang B'));
+    }
+    alert('Mang A la [' + arr1 + ']');
+    alert('Mang B la [' + arr2 + ']');
+
+    for (let i = 0; i < arr2.length; i++) {
+        let flg = true;
+        for (let j = 0; j < arr1.length; j++) {
+            if (arr1[j] === arr2[i]) {
+                flg = false;
+            }
+        }
+        if (flg) {
+            arrnew.push(arr2[i]);
+        }
+    }
+    console.log(arrnew)
+
+</script>
 </body>
 </html>

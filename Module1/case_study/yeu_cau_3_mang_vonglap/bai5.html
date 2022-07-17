@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai5</title>
 </head>
 <body>
-$END$
+<script>
+    let thucDon = 'Moi ban chon thuoc uong\n' +
+        '1--Cafe\n' +
+        '2--Cam vat\n' +
+        '3--Nuoc ep ca rot\n' +
+        '4--Nuoc ep ca chua\n' +
+        '5--Nuoc loc\n' +
+        '6--Nuoc dua\n' +
+        '7--Thoat goi mon va tinh tien\n'
+    let choose;
+    let price = 0;
+    let total = 0;
+    do {
+        choose = parseInt(prompt(thucDon))
+        switch (choose) {
+            case 1:
+                alert('Ban da chon Cafe');
+                price = 10000;
+                break;
+            case 2:
+                alert('Ban da chon cam vat');
+                price = 15000
+                break;
+            case 3:
+                alert('Ban da chon nuoc ep ca rot');
+                price = 20000;
+                break;
+            case 4:
+                alert('Ban da chon nuoc ep ca chua');
+                price = 20000
+                break;
+            case 5:
+                alert('Ban da chon nuoc loc');
+                price = 8000;
+                break;
+            case 6:
+                alert('Ban da chon nuoc dua');
+                price = 25000
+                break;
+            default:
+                continue;
+        }
+        let soLuong = parseInt(prompt('Moi ban nhap so luong,' + 'gia cua san pham la ' + price));
+        total += soLuong * price
+    } while (choose !== 7)
+    alert('Thanh tien: ' + total + 'VND')
+</script>
 </body>
 </html>

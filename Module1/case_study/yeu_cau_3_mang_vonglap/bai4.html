@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai4</title>
 </head>
 <body>
-$END$
+<script>
+    let n = parseInt(prompt('Nhap so phan tu cua mang'))
+    let num = [];
+    for (let i = 0; i < n; i++) {
+        num[i] = parseInt(prompt('Nhap phan tu thu ' + (i + 1) + ' cua mang'))
+    }
+    alert('Mang la : [' + num + ']')
+
+    for (let i = 0; i < num.length; i++) {
+        switch (num[i]) {
+            case 1:
+                document.write('Mot ');
+                break;
+            case 2:
+                document.write('Hai ');
+                break;
+            case 3:
+                document.write('Ba ');
+                break;
+            case 4:
+                document.write('Bon ');
+                break;
+            case 5:
+                document.write('Nam ');
+                break;
+            case 6:
+                document.write('Sau ');
+                break;
+            case 7:
+                document.write('Bay ');
+                break;
+            case 8:
+                document.write('Tam ');
+                break;
+            case 9:
+                document.write('Chin ');
+                break;
+        }
+    }
+
+</script>
 </body>
 </html>

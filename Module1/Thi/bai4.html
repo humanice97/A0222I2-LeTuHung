@@ -1,10 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai4</title>
 </head>
 <body>
-$END$
+<h1>Quan ly dien thoai</h1>
+<input type="text" id="Ma" placeholder="Nhap ma dien thoai">
+<input type="text" id="Ten" placeholder="Nhập tên dien thoai">
+<input type="text" id="Hang" placeholder="Nhập hang san xuat">
+<input type="text" id="Gia" placeholder="Nhập gia">
+<input id="add" type="button" onclick="addDienThoai()" value="Add New Product"><br>
+<span>Danh sách sản phẩm:  </span>
+<table>
+    <tr>
+        <td >Ma dien thoai</td>
+        <td>Ten dien thoai</td>
+        <td>Hang san xuat</td>
+        <td>Gia dien thoai</td>
+    </tr>
+</table>
+<p id="display"></p>
+<script>
+    class Phone {
+        constructor(ma, ten, hang, gia) {
+            this.ma = ma;
+            this.ten = ten;
+            this.hang = hang;
+            this.gia = gia;
+        }
+
+        setMa(maDienThoai) {
+            this.ma = maDienThoai;
+        }
+
+        getMa() {
+            return this.ma;
+        }
+
+        setTen(tenDienThoai) {
+            this.ten = tenDienThoai;
+        }
+
+        getTen() {
+            return this.ten;
+        }
+
+        setHang(hangDienThoai) {
+            this.hang = hangDienThoai;
+        }
+
+        getHang() {
+            return this.hang;
+        }
+
+        setGia(giaDienThoai) {
+            this.gia = giaDienThoai;
+        }
+
+        getGia() {
+            return this.gia;
+        }
+
+        getProduct() {
+            return [this.ma, this.ten, this.hang, this.gia];
+        }
+    }
+
+    let productList = [];
+
+    function veDanhSach(arr) {
+        let str = '';
+        for (let i = 0; i < arr.length; i++) {
+            str += '<input value="' + arr[i].getMa() + '">' +
+                '<input value="' + arr[i].getTen() + '">' +
+                '<input value="' + arr[i].getHang() + '">' +
+                '<input value="' + arr[i].getGia() + '" >' + '<br>';
+        }
+        document.getElementById('display').innerHTML = str;
+    }
+
+    function addDienThoai() {
+        let product = [];
+        product[0] = document.getElementById('Ma').value;
+        product[1] = document.getElementById('Ten').value;
+        product[2] = document.getElementById('Hang').value;
+        product[3] = document.getElementById('Gia').value;
+        let phone = new Phone(product[0], product[1], product[2], product[3]);
+        productList.push(phone);
+        veDanhSach(productList)
+    }
+
+</script>
 </body>
 </html>

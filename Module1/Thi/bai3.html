@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>bai3</title>
 </head>
 <body>
-$END$
+<script>
+
+
+    let n = parseInt(prompt('Nhap do dai cua mang'));
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt('Moi nhap phan tu thu ' + (i + 1)));
+    }
+    alert('Mang so nguyen cua ban la : [' + arr + ']');
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 2) {
+            arr.splice(i, 1)
+        }
+        for (let j = 2; j <= Math.sqrt(arr[i]); j++) {
+            if (arr[i] % j === 0) {
+                arr.splice(i, 1)
+                i--;
+            }
+        }
+    }
+    arr.sort(function (a, b){
+        return a - b
+    })
+    alert('Mang so nguyen to da duoc sap xep tang dan la : [' + arr + ']')
+
+</script>
 </body>
 </html>
