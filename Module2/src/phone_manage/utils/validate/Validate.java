@@ -34,7 +34,8 @@ public class Validate {
         boolean check;
         while (true){
             String result = checkIsEmpty();
-            check = result.matches("^[A-Za-z ]+$");
+//            check = result.matches("^[A-Z]{2}-\\d+$");
+            check = result.matches("^[A-Z][a-z]+?\s?[A-Z]?[a-z]?+$");
             if(check){
                 return result;
             } else {
