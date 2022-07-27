@@ -4,7 +4,7 @@ create table Class(
 ClassID int primary key auto_increment not null,
 ClassName varchar(50) not null,
 StartDate datetime not null,
-Status bit
+`Status` bit
 );
 
 create table Student(
@@ -12,16 +12,16 @@ StudentId int primary key auto_increment not null,
 StudentName varchar(30) not null,
 Address varchar(50),
 Phone varchar(20),
-Status bit,
+`Status` bit,
 ClassID int not null,
 foreign key (ClassID) references Class(ClassID)
 );
 
-create table Subject(
+create table `Subject`(
 SubID int not null auto_increment primary key,
 SubName varchar(50) not null,
 Credit tinyint not null default 1 check (Credit >=1),
-Status bit default 1
+`Status` bit default 1
 );
 
 create table Mark(
@@ -31,6 +31,15 @@ StudentID int not null,
 Mark float default 0 check (Mark between 0 and 100),
 ExamTimes tinyint default 1,
 unique (SubID, StudentID),
-foreign key (SubID) references Subject (SubID),
+foreign key (SubID) references `Subject` (SubID),
 foreign key (StudentID) references Student (StudentID)
 );
+
+insert into Class 
+values (1,'A1','2008-12-20',1);
+insert into Class 
+values (2,'A2','2008-12-20',1);
+insert into Class 
+values (3,'A3',current_date,0);
+
+
