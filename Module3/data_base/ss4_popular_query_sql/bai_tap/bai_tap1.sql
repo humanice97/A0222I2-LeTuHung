@@ -55,10 +55,30 @@ VALUES (1, 'CF', 5, 1),
        (3, 'HDJ', 5, 1),
        (4, 'RDBMS', 10, 1);
        
-
 INSERT INTO Mark (SubId, StudentId, Mark, ExamTimes)
 VALUES (1, 1, 8, 1),
        (1, 2, 10, 2),
        (2, 1, 12, 1);
+       
+       
+-- Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất.
+select *
+from Subject 
+where Credit = (select max(Credit) from Subject );
+
+-- Hiển thị các thông tin môn học có điểm thi lớn nhất.
+
+select sj.SubID, sj.SubName, m.Mark
+from Subject sj
+join Mark m on sj.SubID=m.SubID
+where Mark = (select max(Mark)from Mark);
+
+-- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần
+
+select *, avg(m.Mark)
+from Student s 
+join Mark m on s.StudentID = m.StudentID
+group by s.StudentID
+order by avg(Mark) desc;
 
 

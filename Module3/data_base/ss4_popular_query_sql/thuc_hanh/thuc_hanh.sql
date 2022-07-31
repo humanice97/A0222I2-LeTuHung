@@ -61,4 +61,36 @@ VALUES (1, 1, 8, 1),
        (1, 2, 10, 2),
        (2, 1, 12, 1);
 
+-- Hiển thị số lượng sinh viên ở từng nơi
+
+select Address, count(StudentID) as SoLuongSinhVien
+from Student
+group by Address;
+
+-- Tính điểm trung bình các môn học của mỗi học viên
+
+select s.StudentID, s.StudentName, avg(Mark) as DiemTrungBinh
+from Student s join Mark m on s.StudentId = m.StudentID
+group by s.StudentId, s.StudentName;
+
+
+-- Hiển thị những bạn học viên có điểm trung bình các môn học lớn hơn 15
+
+select s.StudentID, s.StudentName, avg(Mark) as DiemTrungBinh
+from Student s join Mark m on s.StudentId = m.StudentID
+group by s.StudentId, s.StudentName
+having avg(Mark) > 15;
+
+-- Hiển thị thông tin các học viên có điểm trung bình lớn nhất.
+
+select s.StudentId, s.StudentName, avg(Mark)
+from Student s join Mark m on s.StudentId = m.StudentID
+group by s.StudentId, s.StudentName
+having avg(Mark) >= all 
+(select avg(Mark)
+ from Mark m 
+ group by m.StudentID);
+
+
+
 
