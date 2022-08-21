@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.box-detail{
+    border: 1px solid whitesmoke ;
+}
+.box-detail:hover{
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.box-main div img{
+    width: 100%;
+    height: 80%;
+}
+.box-main div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
