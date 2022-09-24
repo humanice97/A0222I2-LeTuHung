@@ -1,0 +1,24 @@
+repository/iml/CategoryRepository.java
+ repository.iml.CategoryRepository
+service/iml/CategoryService.java
+ service.iml.CategoryService
+model/Product.java
+ model.Product
+model/Category.java
+ model.Category
+repository/BaseRepository.java
+ repository.BaseRepository
+repository/ICategoryRepository.java
+ repository.ICategoryRepository
+service/ICategoryService.java
+ service.ICategoryService
+repository/IProductRepository.java
+ repository.IProductRepository
+service/IProductService.java
+ service.IProductService
+repository/iml/ProductRepository.java
+ repository.iml.ProductRepository
+service/iml/ProductService.java
+ service.iml.ProductService
+controller/ProductServlet.java
+ controller.ProductServlet

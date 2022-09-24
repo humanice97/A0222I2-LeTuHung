@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0729119-d3df-4cbe-b2d2-c119b7cf5e8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_2_if_switch_case/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_2_if_switch_case/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_4_string/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_4_string/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_4_string/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_5_mang_2_chieu/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_6_OOP/vietlot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/A0222I2-LeTuHung.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/ss10_ss11_loop/bai_tap/luyen_tap_vong_lap_2/bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/ss10_ss11_loop/bai_tap/luyen_tap_vong_lap_2/bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/ss14_ss15_function/bai_tap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/ss14_ss15_function/bai_tap/QLSP.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="296tnMslaLVd8YdXFG6mTZsTOqU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="A0222I2-LeTuHung" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="A0222I2-LeTuHung" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0729119-d3df-4cbe-b2d2-c119b7cf5e8e" name="Changes" comment="" />
+      <created>1652445531058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652445531058</updated>
+      <workItem from="1652445533276" duration="66000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
