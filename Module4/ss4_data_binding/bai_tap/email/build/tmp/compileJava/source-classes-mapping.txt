@@ -1,0 +1,8 @@
+com/codegym/service/IEmailService.java
+ com.codegym.service.IEmailService
+com/codegym/model/Email.java
+ com.codegym.model.Email
+com/codegym/service/impl/EmailService.java
+ com.codegym.service.impl.EmailService
+com/codegym/controller/EmailController.java
+ com.codegym.controller.EmailController
