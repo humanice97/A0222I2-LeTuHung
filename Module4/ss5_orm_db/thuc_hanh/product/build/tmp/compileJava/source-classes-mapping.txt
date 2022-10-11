@@ -1,0 +1,8 @@
+com/codegym/controller/ProductController.java
+ com.codegym.controller.ProductController
+com/codegym/service/IProductService.java
+ com.codegym.service.IProductService
+com/codegym/service/impl/ProductServiceImpl.java
+ com.codegym.service.impl.ProductServiceImpl
+com/codegym/model/Product.java
+ com.codegym.model.Product
