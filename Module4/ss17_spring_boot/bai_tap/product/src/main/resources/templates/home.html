@@ -25,5 +25,18 @@
         <td><a th:href="@{/product/{id}/delete(id=${p.id})}">delete</a></td>
     </tr>
 </table>
+<div>
+    <span>
+        <a th:if = "${listProduct.hasPrevious()}"
+           th:href="@{/list(page = ${listProduct.number - 1})}">Previous</a>
+    </span>
+    <span th:each="pageNo: ${#numbers.sequence(0,listProduct.totalPages - 1)}">
+        <a th:href="@{/list(page = ${pageNo})}" th:text="${pageNo}"></a>
+    </span>
+    <span>
+        <a th:if = "${listProduct.hasNext()}"
+           th:href="@{/list(page = ${listProduct.number +1})}">Next</a>
+    </span>
+</div>
 </body>
 </html>

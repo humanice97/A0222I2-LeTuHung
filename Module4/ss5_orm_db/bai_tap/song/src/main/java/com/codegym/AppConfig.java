@@ -50,7 +50,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/music");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/music?createDatabaseIfNotExist=true");
         dataSource.setUsername("root");
         dataSource.setPassword("letuhung1997");
         return dataSource;
@@ -65,7 +65,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 
     Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", "create");
+        properties.setProperty("hibernate.hbm2ddl.auto", "update");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         return properties;
     }

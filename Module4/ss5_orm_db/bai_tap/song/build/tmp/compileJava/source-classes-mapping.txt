@@ -1,12 +1,12 @@
+com/codegym/repository/ISongRepository.java
+ com.codegym.repository.ISongRepository
 com/codegym/AppConfig.java
  com.codegym.AppConfig
-com/codegym/service/impl/SongService.java
- com.codegym.service.impl.SongService
 com/codegym/model/Song.java
  com.codegym.model.Song
+com/codegym/service/impl/SongService.java
+ com.codegym.service.impl.SongService
 com/codegym/service/ISongService.java
  com.codegym.service.ISongService
 com/codegym/controller/SongController.java
  com.codegym.controller.SongController
-com/codegym/repository/ISongRepository.java
- com.codegym.repository.ISongRepository

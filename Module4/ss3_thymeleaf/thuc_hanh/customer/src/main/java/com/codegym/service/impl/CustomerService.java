@@ -2,6 +2,9 @@ package com.codegym.service.impl;
 
 import com.codegym.model.Customer;
 import com.codegym.service.ICustomerService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
