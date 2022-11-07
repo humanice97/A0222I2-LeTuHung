@@ -17,6 +17,7 @@
 </head>
 <body>
 <a th:href="@{/add}">Add new Book</a>
+<a th:href="@{/rentList}">List Rent</a>
 <p th:if="${msg}">
 <p th:text="${msg}"></p></p>
 
@@ -41,8 +42,8 @@
         <td th:text="${b.kindBook}"></td>
         <td th:text="${b.quantity}"></td>
         <td>
-            <a th:href="@{book/{id}/update(id=${b.id})}">Update</a>
-            <a th:href="@{book/{id}/delete(id=${b.id})}">Delete</a>
+            <a th:href="@{update/{id}(id=${b.id})}">Update</a>
+            <a th:href="@{delete/{id}(id=${b.id})}">Delete</a>
             <a th:href="@{detail/{id}(id=${b.id})}">Detail</a>
         </td>
     </tbody>

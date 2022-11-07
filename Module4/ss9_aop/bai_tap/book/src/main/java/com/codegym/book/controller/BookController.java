@@ -1,25 +1,27 @@
 package com.codegym.book.controller;
 
+import com.codegym.book.exception.BookRunOut;
 import com.codegym.book.model.Book;
-import com.codegym.book.service.IBookService;
+import com.codegym.book.model.Rent;
 import com.codegym.book.service.impl.BookService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.codegym.book.service.impl.RentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class BookController {
     final
     BookService bookService;
+    final
+    RentService rentService;
 
-    public BookController(BookService bookService) {
+    public BookController(BookService bookService, RentService rentService) {
         this.bookService = bookService;
+        this.rentService = rentService;
     }
+
 
     @GetMapping("/list")
     public String home(Model model) {
@@ -47,10 +49,29 @@ public class BookController {
     }
 
     @GetMapping("/rent/{id}")
-    public String rent(@PathVariable Long id, Model model){
-
+    public String rent(@PathVariable Long id, RedirectAttributes redirectAttributes) throws BookRunOut {
+        Book book = bookService.findById(id);
+        this.bookService.rent(book);
+        this.rentService.saveBookCode(book);
+        redirectAttributes.addFlashAttribute("msg", "thue thanh cong");
         return "redirect:/list";
     }
+
+    @GetMapping("/rentList")
+    public String showListRent(Model model) {
+        model.addAttribute("rent", rentService.findAll());
+        return "listRent";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteBook(@PathVariable Long id) {
+        bookService.deleteById(id);
+        return "redirect:/list";
+    }
+   @ExceptionHandler(BookRunOut.class)
+    public String showErr(){
+        return "error";
+   }
 
 }
 

@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <title>Book Detail</title>
 </head>
-<body th:object="${book}">
-<div>
-    <input type="hidden" th:field="*{id}">
-</div>
-<div>
-    <label>Name</label>
-    <input type="text" th:field="*{nameBook}">
-</div>
-<div>
-    <label>Author</label>
-    <input type="text" th:field="*{author}">
-</div>
-<div>
-    <label>Kind book</label>
-    <input type="text" th:field="*{kindBook}">
-</div>
-<div>
-    <label>Quantity</label>
-    <input type="text" th:field="*{quantity}">
+<body>
+<div th:object="${book}">
+    <div>
+        <input type="hidden" th:field="*{id}">
+    </div>
+    <div>
+        <label>Name</label>
+        <input type="text" th:field="*{nameBook}">
+    </div>
+    <div>
+        <label>Author</label>
+        <input type="text" th:field="*{author}">
+    </div>
+    <div>
+        <label>Kind book</label>
+        <input type="text" th:field="*{kindBook}">
+    </div>
+    <div>
+        <label>Quantity</label>
+        <input type="text" th:field="*{quantity}">
+    </div>
 </div>
 
 <a th:href="@{/rent/{id}(id=${id})}">Rent book</a>

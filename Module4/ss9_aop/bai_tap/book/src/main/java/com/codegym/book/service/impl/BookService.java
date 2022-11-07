@@ -1,5 +1,6 @@
 package com.codegym.book.service.impl;
 
+import com.codegym.book.exception.BookRunOut;
 import com.codegym.book.model.Book;
 import com.codegym.book.repository.IBookRepository;
 import com.codegym.book.service.IBookService;
@@ -23,8 +24,8 @@ public class BookService implements IBookService {
     }
 
     @Override
-    public Optional<Book> findById(Long id) {
-        return iBookRepository.findById(id);
+    public Book findById(Long id) {
+        return iBookRepository.findById(id).orElse(null);
     }
 
     @Override
@@ -37,4 +38,22 @@ public class BookService implements IBookService {
         iBookRepository.save(book);
         return null;
     }
+
+    @Override
+    public void rent(Book book) throws BookRunOut {
+        if (book.getQuantity() > 0 && book.getQuantity() != null) {
+            book.setQuantity(book.getQuantity() - 1);
+            this.iBookRepository.save(book);
+        } else {
+            throw new BookRunOut();
+        }
+    }
+
+    @Override
+    public void giveBookBack(Book book) {
+        book.setQuantity(book.getQuantity() +1);
+        iBookRepository.save(book);
+    }
+
+
 }
