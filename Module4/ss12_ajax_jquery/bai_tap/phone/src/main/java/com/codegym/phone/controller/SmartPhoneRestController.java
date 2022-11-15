@@ -40,12 +40,12 @@ public class SmartPhoneRestController {
 
     }
 
-    @GetMapping("/list")
-    public ModelAndView getAllSmartphonePage() {
-        ModelAndView modelAndView = new ModelAndView("/list");
-        modelAndView.addObject("smartphones", iSmartPhoneService.findAll());
-        return modelAndView;
-    }
+//    @GetMapping("/list")
+//    public ModelAndView getAllSmartphonePage() {
+//        ModelAndView modelAndView = new ModelAndView("/list");
+//        modelAndView.addObject("smartphones", iSmartPhoneService.findAll());
+//        return modelAndView;
+//    }
 
 
 }

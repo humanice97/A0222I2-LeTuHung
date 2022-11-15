@@ -3,7 +3,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>List Smartphone</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"-->
+    <!--            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="-->
+    <!--            crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+            integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
           integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -35,6 +40,26 @@
 </form>
 <h1>Smartphone List</h1>
 <p id="smartphoneList"></p>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Do you want to delete this smartphone ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="btn-delete" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
 
     function addNewSmartPhone() {
@@ -92,8 +117,8 @@
     successHandler();
 
     function getSmartphone(smartphone) {
-        return `<tr><td >${smartphone.producer}</td><td id="idDelete" hidden>${smartphone.id}</td><td >${smartphone.model}</td><td >${smartphone.price}</td>` +
-            `<td><button id="btnDelete" onclick="deleteSmartPhone(${smartphone.id})">Delete</button></td></tr>`;
+        return `<tr><td >${smartphone.producer}</td><td >${smartphone.model}</td><td >${smartphone.price}</td>` +
+            `<td><button type="button" data-id="${smartphone.id}" class="btn btn-primary btnInfo">Delete</button></td></tr>`;
     }
 
     function deleteSmartPhone(value) {
@@ -114,9 +139,20 @@
         });
         //chặn sự kiện mặc định của thẻ
         event.preventDefault();
-
-
     }
+
+    $(document).ready(function () {
+        $(".btnInfo").click(function () {
+            let dataId = $(this).attr("data-id");
+            $('#btn-delete').attr('onClick', 'deleteSmartPhone(' + dataId + ');');
+            $("#myModal").modal('show');
+        });
+    });
+
+
+
+
+
 </script>
 </body>
 </html>
