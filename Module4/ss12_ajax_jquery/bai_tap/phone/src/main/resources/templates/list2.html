@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<!--create-->
+<div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelCreate">
+        Create product
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="producer">Producer</label>
+                        <input type="text" class="form-control" name="" id="producer" aria-describedby="helpId"
+                               placeholder="input text">
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" class="form-control" name="" id="model" aria-describedby="helpId"
+                               placeholder="input text">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" name="" id="price" aria-describedby="helpId"
+                               placeholder="input float">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-create">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--show list-->
+<div class="container">
+    <h1>Smart Phone List</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Producer</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="5">
+                <span>Loading.....</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modelDelete" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal Delete</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Do you want to delete <span id="txtModal"></span> ?
+                <input type="hidden" id="idDelete">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger btn-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+<script>
+    $(document).ready(function () {
+        function init() {
+            setTimeout(function () {
+                $.ajax({
+                    type: "GET",
+                    //tên API
+                    url: "http://localhost:8080/smartphones",
+                    //xử lý khi thành công
+                    success: function (data) {
+                        $("tbody").empty();
+                        console.log(data);
+                        let tr = [];
+                        for (let i = 0; i < data.length; i++) {
+                            tr.push("<tr>");
+                            tr.push("<td>" + data[i].id + "</td>");
+                            tr.push("<td>" + data[i].producer + "</td>");
+                            tr.push("<td>" + data[i].model + "</td>");
+                            tr.push("<td>" + data[i].price + "</td>");
+                            tr.push("<td><button type='button' class='btn btn-danger btn-delete' data-toggle='modal' data-target='#modelDelete'>Delete</button></td>");
+                            tr.push("</tr>");
+                        }
+                        $("tbody").append(tr.join(""));
+                    }
+                });
+            }, 2000);
+        }
+
+        $(document).on('click', '.btn-delete', function () {
+            let id = $(this).parent().parent().children(':first-child').text();
+            let model = $(this).parent().parent().children("td").eq(2).text();
+            $("#txtModal").text(model);
+            $("#idDelete").val(id);
+
+            console.log(id + " - " + model);
+        })
+
+        $(".btn-delete").on('click', function () {
+            //lay du lieu
+            let idDelete = $("#idDelete").val();
+
+            // goi ajax
+            $.ajax({
+                type: "DELETE",
+                //tên API
+                url: `http://localhost:8080/smartphones/${idDelete}`,
+                //xử lý khi thành công
+                success: function () {
+                    $('#modelDelete').modal('hide');
+                    $("tbody").empty();
+                    $("tbody").append("Loading....");
+                    init();
+                }
+
+            });
+        })
+        $(".btn-create").on('click', function () {
+            let producer = $('#producer').val();
+            let model = $('#model').val();
+            let price = $('#price').val();
+            let newSmartphone = {
+                producer: producer,
+                model: model,
+                price: price
+            };
+            // goi ajax
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                data: JSON.stringify(newSmartphone),
+                //tên API
+                url: "http://localhost:8080/smartphones",
+                //xử lý khi thành công
+                success: function () {
+                    init();
+                    $('#modelCreate').modal('hide');
+                }
+
+
+
+            });
+        })
+
+        init();
+    });
+</script>
+</body>
+</html>

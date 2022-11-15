@@ -6,15 +6,6 @@
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"-->
     <!--            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="-->
     <!--            crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
-            integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
-          integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
-            integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body>
@@ -40,6 +31,27 @@
 </form>
 <h1>Smartphone List</h1>
 <p id="smartphoneList"></p>
+<table class="table">
+    <thead>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td scope="row"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td scope="row"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
 
 
 <!-- Modal -->
@@ -60,8 +72,17 @@
         </div>
     </div>
 </div>
-<script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+        integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
+      integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
+        integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
     function addNewSmartPhone() {
         //lay du lieu
         let producer = $('#producer').val();
@@ -111,10 +132,7 @@
                 document.getElementById('smartphoneList').innerHTML = content;
             }
         });
-
     }
-
-    successHandler();
 
     function getSmartphone(smartphone) {
         return `<tr><td >${smartphone.producer}</td><td >${smartphone.model}</td><td >${smartphone.price}</td>` +
@@ -133,6 +151,7 @@
             url: `http://localhost:8080/smartphones/${smartphoneId}`,
             //xử lý khi thành công
             success: function () {
+                $('#myModal').modal('hide');
                 successHandler();
             }
 
@@ -142,16 +161,21 @@
     }
 
     $(document).ready(function () {
-        $(".btnInfo").click(function () {
+        successHandler();
+
+        // $(".btnInfo").click(function () {
+        //     console.log("a")
+        //     let dataId = $(this).attr("data-id");
+        //     $('#btn-delete').attr('onClick', 'deleteSmartPhone(' + dataId + ');');
+        //     $("#myModal").modal('show');
+        // });
+
+        $(document).on('click','.btnInfo', function () {
             let dataId = $(this).attr("data-id");
             $('#btn-delete').attr('onClick', 'deleteSmartPhone(' + dataId + ');');
             $("#myModal").modal('show');
-        });
+        })
     });
-
-
-
-
 
 </script>
 </body>
