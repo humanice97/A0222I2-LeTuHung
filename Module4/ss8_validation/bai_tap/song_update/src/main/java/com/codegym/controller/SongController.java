@@ -33,7 +33,7 @@ public class SongController {
     }
 
     @PostMapping("/save")
-    public String save(@Validated @ModelAttribute("song") Song song, BindingResult bindingResult, Model model, RedirectAttributes redirectAttributes) {
+    public String save(@Validated @ModelAttribute("song") Song song, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
 //            model.addAttribute("song",new Song());
             return "create";
