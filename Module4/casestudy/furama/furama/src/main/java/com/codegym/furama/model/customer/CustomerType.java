@@ -1,5 +1,7 @@
 package com.codegym.furama.model.customer;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,6 +20,7 @@ public class CustomerType {
     private Integer id;
     @Column(name = "ten_loai_khach")
     private String name;
+
     @OneToMany(mappedBy = "customerType")
     private List<Customer> customers;
 

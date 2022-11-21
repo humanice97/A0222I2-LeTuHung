@@ -1,6 +1,8 @@
 package com.codegym.furama.model.customer;
 
 import com.codegym.furama.model.contract.Contract;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -33,8 +35,11 @@ public class Customer {
     @Column (name = "dia_chi")
     private String address;
     @ManyToOne
+
     @JoinColumn(name = "ma_loai_khach")
     private CustomerType customerType;
+
+
     @OneToMany(mappedBy = "customer")
     private List<Contract> contracts;
 

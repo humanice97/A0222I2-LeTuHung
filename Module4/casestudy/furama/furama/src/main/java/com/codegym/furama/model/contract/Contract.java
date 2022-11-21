@@ -2,6 +2,7 @@ package com.codegym.furama.model.contract;
 
 import com.codegym.furama.model.customer.Customer;
 import com.codegym.furama.model.employee.Employee;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

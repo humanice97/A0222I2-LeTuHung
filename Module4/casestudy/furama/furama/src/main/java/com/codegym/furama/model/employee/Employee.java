@@ -1,6 +1,9 @@
 package com.codegym.furama.model.employee;
 
 import com.codegym.furama.model.contract.Contract;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -27,13 +30,13 @@ public class Employee {
 
 
     @Column(name = "ho_va_ten")
-    @Pattern(regexp = "^([a-zA-Z]{2,}\\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)", message = "loi syntax ten")
+    @Pattern(regexp = "^([A-Z][a-z]+[ ][A-Z]?[a-z]+)", message = "loi syntax ten")
     @NotBlank(message = "khong duoc de trong")
     private String name;
 
 
     @Column(name = "ngay_sinh")
-    private Date dateOfBirth;
+    private String dateOfBirth;
 
 
     @NotBlank(message = "khong duoc de trong")
@@ -61,14 +64,20 @@ public class Employee {
 
 
     @ManyToOne
+    @JsonManagedReference
     @JoinColumn(name = "ma_vi_tri")
     private Position position;
     @ManyToOne
+    @JsonManagedReference
     @JoinColumn(name = "ma_trinh_do")
     private Level level;
     @ManyToOne
+    @JsonManagedReference
     @JoinColumn(name = "ma_bo_phan")
     private Department department;
+
+
     @OneToMany(mappedBy = "employee")
+    @JsonIgnore
     private List<Contract> contracts;
 }

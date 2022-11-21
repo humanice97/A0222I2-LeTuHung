@@ -31,7 +31,7 @@
 
     <br>
     <label for="email">Email: </label>
-    <input type="text" th:field="*{email}"id="email">
+    <input type="text" th:field="*{email}" id="email">
     <span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
 
     <br>
@@ -40,7 +40,8 @@
     <br>
     <label for="position">Position: </label>
     <select th:field="*{position}" name="" id="position">
-        <option th:each="positionItems : ${positionList}" th:value="${positionItems.id}" th:text="${positionItems.name}">
+        <option th:each="positionItems : ${positionList}" th:value="${positionItems.id}"
+                th:text="${positionItems.name}">
         </option>
     </select>
     <br>
@@ -52,12 +53,15 @@
     <br>
     <label for="department">Department: </label>
     <select th:field="*{department}" name="" id="department">
-        <option th:each="departmentItems : ${departmentList}" th:value="${departmentItems.id}" th:text="${departmentItems.name}">
+        <option th:each="departmentItems : ${departmentList}" th:value="${departmentItems.id}"
+                th:text="${departmentItems.name}">
         </option>
     </select>
     <br>
     <button type="submit" th:if="${id==0 or id==null}">Add new</button>
     <button type="submit" th:unless="${id==0 or id==null}">Edit</button>
 </form>
+
+
 </body>
 </html>

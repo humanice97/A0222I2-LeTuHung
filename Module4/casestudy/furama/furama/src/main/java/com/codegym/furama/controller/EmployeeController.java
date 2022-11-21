@@ -56,9 +56,8 @@ public class EmployeeController {
     }
 
     @PostMapping(value = "/save")
-    private String saveEmployee(@Valid @ModelAttribute("employee") Employee employee, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
+    private String saveEmployee(@Validated @ModelAttribute("employee") Employee employee, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
         if (bindingResult.hasErrors()) {
-            model.addAttribute("employee", new Employee());
             model.addAttribute("positionList", positionServices.findAll());
             model.addAttribute("levelList", levelServices.findAll());
             model.addAttribute("departmentList", departmentServices.findAll());

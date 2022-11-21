@@ -1,5 +1,6 @@
 package com.codegym.furama.model.employee;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,6 +19,8 @@ public class Position {
     private Integer id;
     @Column(name = "ten_vi_tri")
     private String name;
+
+    @JsonBackReference
     @OneToMany(mappedBy = "position")
     private List<Employee> employees;
 
