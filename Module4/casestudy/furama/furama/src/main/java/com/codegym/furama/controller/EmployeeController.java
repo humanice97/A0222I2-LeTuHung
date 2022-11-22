@@ -6,7 +6,11 @@ import com.codegym.furama.services.employee.impl.EmployeeServices;
 import com.codegym.furama.services.employee.impl.LevelServices;
 import com.codegym.furama.services.employee.impl.PositionServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -15,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/employee")
@@ -28,15 +33,18 @@ public class EmployeeController {
     @Autowired
     private DepartmentServices departmentServices;
 
-    @GetMapping("list")
-    private String getList(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
-        model.addAttribute("employeeList", employeeServices.getAll(PageRequest.of(page, 4)));
-        return "employee/list";
-    }
+//    @GetMapping("list")
+//    private String getList(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
+//        model.addAttribute("employeeList", employeeServices.getAll(PageRequest.of(page, 4)));
+//        return "employee/list";
+//    }
 
     @GetMapping("")
-    private String getPage(Model model, @RequestParam(value = "page", defaultValue = "0") int page, @RequestParam(name = "nameSearch", defaultValue = "") String nameSearch) {
-        model.addAttribute("employeeList", employeeServices.findByName(nameSearch, PageRequest.of(page, 4)));
+    private String getPage(@PageableDefault(value = 1) Pageable pageable,
+                           @RequestParam(value = "inputSearch", defaultValue = "") String nameSearch,
+                           Model model) {
+        Page<Employee> employees = employeeServices.findByName(nameSearch,pageable);
+        model.addAttribute("employeeList",employees);
         model.addAttribute("nameSearch", nameSearch);
         return "employee/list";
     }

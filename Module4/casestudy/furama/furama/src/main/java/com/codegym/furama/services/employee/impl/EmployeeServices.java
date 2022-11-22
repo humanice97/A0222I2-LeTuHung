@@ -20,7 +20,7 @@ public class EmployeeServices implements IEmployeeServices {
     }
 
     @Override
-    public Page findByName(String name, Pageable pageable) {
+    public Page<Employee> findByName(String name, Pageable pageable) {
         return iEmployeeRepository.findByNameContains(name,pageable);
     }
 

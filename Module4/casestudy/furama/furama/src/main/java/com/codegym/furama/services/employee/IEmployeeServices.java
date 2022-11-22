@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface IEmployeeServices {
     List<Employee> findAll();
-    Page findByName(String name, Pageable pageable);
+    Page<Employee> findByName(String name, Pageable pageable);
     void save (Employee employee);
     void delete(Employee employee);
     Employee getEmployeeById(int id);

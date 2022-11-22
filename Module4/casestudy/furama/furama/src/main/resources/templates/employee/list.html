@@ -34,7 +34,7 @@
             </ul>
             <form action="/employee" class="d-flex" method="get">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-                       name="nameSearch">
+                       name="inputSearch" th:value="${nameSearch}">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
@@ -83,14 +83,14 @@
 </table>
 <span>
         <a th:if="${employeeList.hasPrevious()}"
-           th:href="@{/employee/(page = ${employeeList.number - 1},inputSearch=${nameSearch})}">Previous</a>
+           th:href="@{/employee(page = ${employeeList.number - 1},inputSearch=${nameSearch})}">Previous</a>
     </span>
 <span style="color: red" th:each="pageNo: ${#numbers.sequence(0,employeeList.totalPages - 1)}">
-        <a th:href="@{/employee/(page = ${pageNo},inputSearch=${nameSearch})}" th:text="${pageNo}"></a>
+        <a th:href="@{/employee(page = ${pageNo},inputSearch=${nameSearch})}" th:text="${pageNo}"></a>
     </span>
 <span>
         <a th:if="${employeeList.hasNext()}"
-           th:href="@{/employee/(page = ${employeeList.number +1},inputSearch=${nameSearch})}">Next</a>
+           th:href="@{/employee(page = ${employeeList.number +1},inputSearch=${nameSearch})}">Next</a>
     </span>
 
 
