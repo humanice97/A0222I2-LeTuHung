@@ -40,7 +40,7 @@ public class EmployeeController {
 //    }
 
     @GetMapping("")
-    private String getPage(@PageableDefault(value = 1) Pageable pageable,
+    private String getPage(@PageableDefault(value = 4) Pageable pageable,
                            @RequestParam(value = "inputSearch", defaultValue = "") String nameSearch,
                            Model model) {
         Page<Employee> employees = employeeServices.findByName(nameSearch,pageable);
