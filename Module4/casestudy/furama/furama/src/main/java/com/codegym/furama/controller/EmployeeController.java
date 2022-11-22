@@ -33,11 +33,11 @@ public class EmployeeController {
     @Autowired
     private DepartmentServices departmentServices;
 
-//    @GetMapping("list")
-//    private String getList(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
-//        model.addAttribute("employeeList", employeeServices.getAll(PageRequest.of(page, 4)));
-//        return "employee/list";
-//    }
+    @GetMapping("list")
+    private String getList(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
+        model.addAttribute("employeeList", employeeServices.getAll(PageRequest.of(page, 4)));
+        return "employee/list";
+    }
 
     @GetMapping("")
     private String getPage(@PageableDefault(value = 1) Pageable pageable,
