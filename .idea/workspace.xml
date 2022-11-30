@@ -2,32 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0729119-d3df-4cbe-b2d2-c119b7cf5e8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/Thi/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_1_ve_hinh/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_2_if_switch_case/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_2_if_switch_case/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_3_mang_vonglap/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_4_string/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_4_string/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_4_string/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_5_mang_2_chieu/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module1/case_study/yeu_cau_6_OOP/vietlot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/A0222I2-LeTuHung.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/ss10_ss11_loop/bai_tap/luyen_tap_vong_lap_2/bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/ss10_ss11_loop/bai_tap/luyen_tap_vong_lap_2/bai4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/ss14_ss15_function/bai_tap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/ss14_ss15_function/bai_tap/QLSP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/model/QuestionContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/model/QuestionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/repository/IQuestionContentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/repository/IQuestionTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/service/IQuestionContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/service/IQuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/service/impl/QuestionContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/java/com/codegym/exam_module4/service/impl/QuestionTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/exam/exam_module4/src/main/resources/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/jsp_servlet/case_study/product/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/jsp_servlet/case_study/product/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/jsp_servlet/case_study/product/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/jsp_servlet/case_study/product/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/thuc_hanh/quan_li/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/thuc_hanh/quan_li/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +35,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="A0222I2-LeTuHung" />
@@ -74,10 +67,23 @@
       <option name="presentableId" value="Default" />
       <updated>1652445531058</updated>
       <workItem from="1652445533276" duration="66000" />
+      <workItem from="1669529827584" duration="14000" />
+      <workItem from="1669529844786" duration="1000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
