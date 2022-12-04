@@ -1,0 +1,26 @@
+<label>
+    <i class="fa fa-first-order" aria-hidden="true">First Num: </i>
+    <input type="text" name="value" [(ngModel)]="valueFistNum">
+</label>
+<br>
+  <label for="">Operator</label>
+  <select name="value" [(ngModel)]="operatorCal">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">X</option>
+    <option value="/">/</option>
+  </select>
+<br>
+<label>
+    <i class="fa fa-first-order" aria-hidden="true">Second Num: </i>
+    <input type="text" name="value" [(ngModel)]="valueSecondNum">
+</label>
+<br>
+<button (click)="cal()" >Calculate</button>
+
+
+<div class="alert alert-primary" style="width: 3em;" role="alert">
+    <strong>{{result}}</strong>
+</div>
+
+
