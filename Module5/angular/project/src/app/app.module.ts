@@ -14,6 +14,8 @@ import { LikeComponent } from './ss4-angular-component-and-template/bai-tap/like
 import { NavbarComponent } from './ss4-angular-component-and-template/bai-tap/navbar/navbar.component';
 import { FooterComponent } from './ss4-angular-component-and-template/bai-tap/footer/footer.component';
 import { NameCardComponent } from './ss5-component-interaction/thuc-hanh/name-card/name-card.component';
+import { ProgressBarComponent } from './ss5-component-interaction/thuc-hanh/progress-bar/progress-bar.component';
+import { FuramaResortComponent } from './case-study/furama-resort/furama-resort.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { NameCardComponent } from './ss5-component-interaction/thuc-hanh/name-ca
     LikeComponent,
     NavbarComponent,
     FooterComponent,
-    NameCardComponent
+    NameCardComponent,
+    ProgressBarComponent,
+    FuramaResortComponent
   ],
   imports: [
     BrowserModule,
