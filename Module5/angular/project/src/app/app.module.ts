@@ -16,6 +16,10 @@ import { FooterComponent } from './ss4-angular-component-and-template/bai-tap/fo
 import { NameCardComponent } from './ss5-component-interaction/thuc-hanh/name-card/name-card.component';
 import { ProgressBarComponent } from './ss5-component-interaction/thuc-hanh/progress-bar/progress-bar.component';
 import { FuramaResortComponent } from './case-study/furama-resort/furama-resort.component';
+import { AngularRatingBarComponent } from './ss5-component-interaction/bai-tap/angular-rating-bar/angular-rating-bar.component';
+import { AngularRatingBarChildComponent } from './ss5-component-interaction/bai-tap/angular-rating-bar-child/angular-rating-bar-child.component';
+import { CountDownComponent } from './ss5-component-interaction/bai-tap/count-down/count-down.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +35,10 @@ import { FuramaResortComponent } from './case-study/furama-resort/furama-resort.
     FooterComponent,
     NameCardComponent,
     ProgressBarComponent,
-    FuramaResortComponent
+    FuramaResortComponent,
+    AngularRatingBarComponent,
+    AngularRatingBarChildComponent,
+    CountDownComponent,
   ],
   imports: [
     BrowserModule,

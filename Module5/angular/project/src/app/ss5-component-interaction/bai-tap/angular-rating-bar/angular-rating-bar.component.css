@@ -1,0 +1,17 @@
+.star {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.starParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

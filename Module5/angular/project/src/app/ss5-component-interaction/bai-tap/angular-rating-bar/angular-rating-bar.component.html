@@ -1,0 +1,12 @@
+<div class="starParent">
+  <div class="star" *ngFor="let item of [].constructor(IRatingUnit.value); let x = index" style="background-color:red">
+    <p>{{x + 1}}</p>
+  </div>
+  <div class="star" *ngFor="let item of [].constructor(10-IRatingUnit.value); let x = index"
+       style="background-color:yellow">
+    <p>{{x + 1 + IRatingUnit.value}}</p>
+  </div>
+</div>
+<app-angular-rating-bar-child (createRating)="getNumber($event)"></app-angular-rating-bar-child>
+
+
