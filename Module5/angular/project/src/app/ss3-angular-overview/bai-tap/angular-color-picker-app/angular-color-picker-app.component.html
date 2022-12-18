@@ -1,10 +1,13 @@
 <div class="form-group container">
   <label>List background color</label>
-  <select (change)="clickChange()" class="form-control" [(ngModel)]="color">
-    <option value="red">Red</option>
-    <option value="green">Green</option>
-    <option value="blue">Blue</option>
-  </select>
+  <!--  <select (change)="clickChange()" class="form-control" [(ngModel)]="color">-->
+  <!--    <option value="red">Red</option>-->
+  <!--    <option value="green">Green</option>-->
+  <!--    <option value="blue">Blue</option>-->
+  <!--  </select>-->
+
+<!--  fix comment-->
+  <input type="color" [ngModel]="color" (ngModelChange)="getColor($event)">
 </div>
-<div class="container" [style]="style">
-</div>
+<div class="container" [style]="style"></div>
+

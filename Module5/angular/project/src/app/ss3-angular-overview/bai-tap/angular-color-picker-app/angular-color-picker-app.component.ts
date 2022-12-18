@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-angular-color-picker-app',
@@ -7,32 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularColorPickerAppComponent implements OnInit {
 
-  color: string ;
-  style:string;
-  clickChange(){
-    switch (this.color) {
-      case "red":
-        this.style = "width: 500px; height: 500px; background-color: red;"
-        break;
-        case "green":
-        this.style = "width: 500px; height: 500px; background-color: green;"
-        break;
-        case "blue":
-        this.style = "width: 500px; height: 500px; background-color: blue;"
-        break;
-    }
-  
-  }
+  color: string;
+  style: string;
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+
   }
 
- 
 
- 
-
+  getColor($event: any) {
+    this.color = $event
+    this.style = `width: 500px; height: 500px; background-color: ${this.color}`
+  }
 }
 
 

@@ -21,11 +21,15 @@ export class CalculatorComponent implements OnInit {
         break;
         case "-":
           this.result=  this.valueFistNum - this.valueSecondNum;
-          break; 
+          break;
         case "*":
           this.result=    this.valueFistNum * this.valueSecondNum
             break;
         case "/":
+          if(this.valueSecondNum == 0){
+            alert('Error')
+            break;
+          }
           this.result = this.valueFistNum / this.valueSecondNum;
         break;
     }
