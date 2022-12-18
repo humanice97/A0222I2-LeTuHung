@@ -1,10 +1,10 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-  Create
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cusEdit">
+  Edit
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal fade" id="cusEdit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -14,12 +14,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <form [formGroup]="createCustomerForm" (ngSubmit)="submitForm()" class="container">
+        <form [formGroup]="editCustomerForm" (ngSubmit)="submitFormEdit()" class="container">
           <div class="form-group">
             <label>Id</label>
             <input formControlName="id" type="text" class="form-control" name="id" placeholder="">
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.id.hasError('required') && createCustomerForm.controls.id.touched">Không được để trống.</p>
+               *ngIf="editCustomerForm.controls.id.hasError('required') && editCustomerForm.controls.id.touched">Không được để trống.</p>
           </div>
 
 
@@ -27,7 +27,7 @@
             <label>Name</label>
             <input formControlName="name" type="text" class="form-control" name="name" placeholder="">
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.name.hasError('required') && createCustomerForm.controls.name.touched">Không được để trống.</p>
+               *ngIf="editCustomerForm.controls.name.hasError('required') && editCustomerForm.controls.name.touched">Không được để trống.</p>
           </div>
 
 
@@ -40,25 +40,25 @@
             <label>Email</label>
             <input formControlName="email" type="text" class="form-control" name="email" placeholder="">
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.email.hasError('required') && createCustomerForm.controls.email.touched">Không được để trống.</p>
+               *ngIf="editCustomerForm.controls.email.hasError('required') && editCustomerForm.controls.email.touched">Không được để trống.</p>
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.email.hasError('email') && createCustomerForm.controls.email.touched">Không đúng định dạng Email.</p>
+               *ngIf="editCustomerForm.controls.email.hasError('email') && editCustomerForm.controls.email.touched">Không đúng định dạng Email.</p>
           </div>
 
           <div class="form-group">
             <label>Age</label>
             <input formControlName="age" type="text" class="form-control" name="age" placeholder="">
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.age.hasError('required') && createCustomerForm.controls.age.touched">Không được để trống</p>
+               *ngIf="editCustomerForm.controls.age.hasError('required') && editCustomerForm.controls.age.touched">Không được để trống</p>
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.age.hasError('min') && createCustomerForm.controls.email.touched">Không được nhỏ hơn 18 tuổi</p>
+               *ngIf="editCustomerForm.controls.age.hasError('min') && editCustomerForm.controls.email.touched">Không được nhỏ hơn 18 tuổi</p>
           </div>
 
           <div class="form-group">
             <label>Address</label>
             <input formControlName="address" type="text" class="form-control" name="address" placeholder="">
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.address.hasError('required') && createCustomerForm.controls.address.touched">Không được để trống</p>
+               *ngIf="editCustomerForm.controls.address.hasError('required') && editCustomerForm.controls.address.touched">Không được để trống</p>
 
           </div>
 
@@ -74,15 +74,15 @@
               Female
             </label>
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.gender.hasError('required') && createCustomerForm.controls.gender.touched">Không được để trống</p>
+               *ngIf="editCustomerForm.controls.gender.hasError('required') && editCustomerForm.controls.gender.touched">Không được để trống</p>
           </div>
           <div class="form-group">
             <label>Phone</label>
             <input formControlName="phone" type="text" class="form-control" name="phone" placeholder="">
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.phone.hasError('required') && createCustomerForm.controls.phone.touched">Không được để trống</p>
+               *ngIf="editCustomerForm.controls.phone.hasError('required') && editCustomerForm.controls.phone.touched">Không được để trống</p>
             <p style="color:red;"
-               *ngIf="createCustomerForm.controls.phone.hasError('pattern') && createCustomerForm.controls.phone.touched">Không đúng định dạng số điện thoại</p>
+               *ngIf="editCustomerForm.controls.phone.hasError('pattern') && editCustomerForm.controls.phone.touched">Không đúng định dạng số điện thoại</p>
 
           </div>
           <div class="modal-footer">

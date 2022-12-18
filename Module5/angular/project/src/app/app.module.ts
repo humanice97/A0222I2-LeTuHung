@@ -26,7 +26,14 @@ import { EmployeeListComponent } from './case-study/furama-resort/component/empl
 import { CustomerListComponent } from './case-study/furama-resort/component/customer/customer-list/customer-list.component';
 import { CreateCustomerComponent } from './case-study/furama-resort/component/customer/create-customer/create-customer.component';
 import { CreateEmployeeComponent } from './case-study/furama-resort/component/employee/create-employee/create-employee.component';
-import { FacilitiesComponent } from './case-study/furama-resort/component/facilities/facilities.component';
+import { FacilitiesComponent } from './case-study/furama-resort/component/facility/facilities/facilities.component';
+import { FacilitiesDeleteComponent } from './case-study/furama-resort/component/facility/facilities-delete/facilities-delete.component';
+import { FacilitiesEditComponent } from './case-study/furama-resort/component/facility/facilities-edit/facilities-edit.component';
+import { HomePageComponent } from './case-study/furama-resort/component/home/home-page/home-page.component';
+import { CustomerEditComponent } from './case-study/furama-resort/component/customer/customer-edit/customer-edit.component';
+import { CustomerDeleteComponent } from './case-study/furama-resort/component/customer/customer-delete/customer-delete.component';
+import { DictionaryComponent } from './ss7-service-router/bai-tap/dictionary/component/dictionary/dictionary.component';
+import { TranslateComponent } from './ss7-service-router/bai-tap/dictionary/component/translate/translate.component';
 
 
 @NgModule({
@@ -55,6 +62,13 @@ import { FacilitiesComponent } from './case-study/furama-resort/component/facili
     CreateCustomerComponent,
     CreateEmployeeComponent,
     FacilitiesComponent,
+    FacilitiesDeleteComponent,
+    FacilitiesEditComponent,
+    HomePageComponent,
+    CustomerEditComponent,
+    CustomerDeleteComponent,
+    DictionaryComponent,
+    TranslateComponent,
   ],
   imports: [
     BrowserModule,

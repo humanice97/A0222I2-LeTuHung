@@ -1,0 +1,20 @@
+<div class="bgc">
+  <div class="container mx-auto mt-4">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of facilities">
+        <div class="card mb-1 mt-1" style="width: 18rem;">
+          <img src="{{item.src}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title | uppercase}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.subtitle}}</h6>
+            <p class="card-text">{{item.content | slice: 0: 100}}...</p>
+            <div class="d-flex justify-content-center">
+              <app-facilities-edit class="mr-5"></app-facilities-edit>
+              <app-facilities-delete></app-facilities-delete>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

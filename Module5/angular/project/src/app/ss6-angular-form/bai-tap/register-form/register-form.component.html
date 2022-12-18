@@ -5,11 +5,9 @@
       <label>Email</label>
       <input formControlName="email" type="text" class="form-control" name="email" placeholder="">
       <p style="color:red;"
-         *ngIf="registerForm.controls.email.hasError('required') && registerForm.controls.email.touched">Khong duoc de
-        trong</p>
+         *ngIf="registerForm.controls.email.hasError('required') && registerForm.controls.email.touched">Không được để trống.</p>
       <p style="color:red;"
-         *ngIf="registerForm.controls.email.hasError('email') && registerForm.controls.email.touched">Khong dung dinh
-        dang email</p>
+         *ngIf="registerForm.controls.email.hasError('email') && registerForm.controls.email.touched">Không đúng định dạng Email.</p>
     </div>
 
     <fieldset formGroupName="pwGroup">
@@ -17,23 +15,19 @@
         <label>Password</label>
         <input formControlName="password" type="text" class="form-control" name="password" placeholder="">
         <p style="color:red;"
-           *ngIf="registerForm.controls.pwGroup.get('password').hasError('required') && registerForm.controls.pwGroup.get('password').touched">Khong
-          duoc de trong</p>
+           *ngIf="registerForm.controls.pwGroup.get('password').hasError('required') && registerForm.controls.pwGroup.get('password').touched">Không được để trống.</p>
         <p style="color:red;"
-           *ngIf="registerForm.controls.pwGroup.get('password').hasError('minlength') && registerForm.controls.pwGroup.get('password').touched">Khong
-          duoc nho hon 6 ky tu</p>
+           *ngIf="registerForm.controls.pwGroup.get('password').hasError('minlength') && registerForm.controls.pwGroup.get('password').touched">Không được nhỏ hơn 6 ký tự</p>
       </div>
       <div class="form-group">
         <label>Confirm Password</label>
         <input formControlName="confirmPassword" type="text" class="form-control" name="confirmPassword" placeholder="">
         <p style="color:red;"
-           *ngIf="registerForm.controls.pwGroup.get('confirmPassword').hasError('required') && registerForm.controls.pwGroup.get('confirmPassword').touched">Khong
-          duoc de trong</p>
+           *ngIf="registerForm.controls.pwGroup.get('confirmPassword').hasError('required') && registerForm.controls.pwGroup.get('confirmPassword').touched">Không được để trống</p>
         <p style="color:red;"
-           *ngIf="registerForm.controls.pwGroup.get('confirmPassword').hasError('minlength') && registerForm.controls.pwGroup.get('confirmPassword').touched">Khong
-          duoc nho hon 6 ky tu</p>
+           *ngIf="registerForm.controls.pwGroup.get('confirmPassword').hasError('minlength') && registerForm.controls.pwGroup.get('confirmPassword').touched">Không được nhỏ hơn 6 ký tự</p>
         <p style="color:red;"
-           *ngIf="registerForm.controls.pwGroup.hasError('passNotMatch') && registerForm.controls.pwGroup.touched">Khong trung mat khau</p>
+           *ngIf="registerForm.controls.pwGroup.hasError('passNotMatch') && registerForm.controls.pwGroup.touched">Không trùng mật khẩu</p>
 
       </div>
     </fieldset>
