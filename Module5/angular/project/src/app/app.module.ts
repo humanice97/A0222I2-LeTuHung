@@ -34,6 +34,11 @@ import { CustomerEditComponent } from './case-study/furama-resort/component/cust
 import { CustomerDeleteComponent } from './case-study/furama-resort/component/customer/customer-delete/customer-delete.component';
 import { DictionaryComponent } from './ss7-service-router/bai-tap/dictionary/component/dictionary/dictionary.component';
 import { TranslateComponent } from './ss7-service-router/bai-tap/dictionary/component/translate/translate.component';
+import {DatePipe} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
+import { ProductListComponent } from './ss7-service-router/bai-tap/product/component/product-list/product-list.component';
+import { ProductCreateComponent } from './ss7-service-router/bai-tap/product/component/product-create/product-create.component';
+import { ProductUpdateComponent } from './ss7-service-router/bai-tap/product/component/product-update/product-update.component';
 
 
 @NgModule({
@@ -69,14 +74,18 @@ import { TranslateComponent } from './ss7-service-router/bai-tap/dictionary/comp
     CustomerDeleteComponent,
     DictionaryComponent,
     TranslateComponent,
+    ProductListComponent,
+    ProductCreateComponent,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {Customer} from "../../../model/customer";
 import {CustomerService} from "../../../service/customer/customer.service";
 
@@ -9,6 +9,8 @@ import {CustomerService} from "../../../service/customer/customer.service";
 })
 export class CustomerListComponent implements OnInit {
 
+
+  customer: Customer = {};
   customerList: Customer[] = [];
 
   constructor(private _customerService: CustomerService) {
@@ -16,14 +18,24 @@ export class CustomerListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this._customerService.findAll())
-    this.customerList = this._customerService.findAll();
+    this._customerService.findAll().subscribe((data) => {
+      this.customerList = data;
+    })
   }
 
 
-  showCus(item: Customer) {
-
+  showModalDel(id: number) {
+    this._customerService.findById(id).subscribe(data => {
+      this.customer = data;
+    });
   }
 
-
+  delCus(id: number) {
+    this._customerService.deleteById(id).subscribe(() => {
+    }, error => {
+    }, () => {
+      this.ngOnInit();
+    })
+    // this.ngOnInit()
+  }
 }

@@ -1,67 +1,42 @@
 import {Injectable} from '@angular/core';
 import {Customer} from "../../model/customer";
+import {filter} from "rxjs/operators";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
+  URL = "http://localhost:3000/customer";
 
-  private _customer: Customer[] = [
-    {
-      id: 1,
-      name: 'Hung',
-      age: 18,
-      address: 'Quang Nam',
-      dateOfBirth: new Date('1999-2-2'),
-      email: 'humanice97@gmail.com',
-      gender: true,
-      phone: '0782076264'
-    },
-    {
-      id: 2,
-      name: 'Hai',
-      age: 22,
-      address: 'Quang Nam',
-      dateOfBirth: new Date('1999-2-2'),
-      email: 'hai@gmail.com',
-      gender: true,
-      phone: '01230124014'
-    },
-    {
-      id: 3,
-      name: 'Trung',
-      age: 25,
-      address: 'Da Nang',
-      dateOfBirth: new Date('1999-2-2'),
-      email: 'trung@gmail.com',
-      gender: true,
-      phone: '012421823123'
-    },
-    {
-      id: 4,
-      name: 'Tuan',
-      age: 28,
-      address: 'Da Nang',
-      dateOfBirth: new Date('1999-2-2'),
-      email: 'tuan@gmail.com',
-      gender: true,
-      phone: '012481231923'
-    },
-    {
-      id: 5,
-      name: 'Vuong',
-      age: 19,
-      address: 'Gia Lai',
-      dateOfBirth: new Date('1999-2-2'),
-      email: 'vuong@gmail.com',
-      gender: true,
-      phone: '012412831231'
-    }]
+  private customer: Customer[] = [];
 
-  constructor() {
+  constructor(private clientHttp: HttpClient) {
+
   }
 
-  findAll(){
-    return this._customer;
+  findAll(): Observable<any> {
+    return this.clientHttp.get(this.URL);
   }
+
+  findById(id: number | null) {
+    return this.clientHttp.get(this.URL + "/" + id);
+  }
+
+
+  save(value: Customer): Observable<Customer> {
+    return this.clientHttp.post<Customer>(this.URL + "/", value);
+  }
+
+
+// gui kem id va obj
+  saveEdit(value: Customer): Observable<Customer> {
+    return this.clientHttp.put(this.URL + "/" + value.id, value);
+  }
+
+  deleteById(id: number): Observable<Customer> {
+    return this.clientHttp.delete(this.URL + "/" + id);
+  }
+
 }

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Customer} from "../../../model/customer";
+import {ActivatedRoute, Router} from "@angular/router";
+import {CustomerService} from "../../../service/customer/customer.service";
+import {$} from "protractor";
 
 @Component({
   selector: 'app-create-customer',
@@ -8,9 +12,10 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class CreateCustomerComponent implements OnInit {
   createCustomerForm: FormGroup;
-  constructor() {
+
+  constructor(private activeRoute: ActivatedRoute,private customerService: CustomerService, private router: Router) {
     this.createCustomerForm = new FormGroup({
-      id: new FormControl('',[Validators.required]),
+      // id: new FormControl('',[Validators.required]),
       name: new FormControl('',[Validators.required]),
       dateOfBirth: new FormControl('',[Validators.required]),
       email: new FormControl('',[Validators.email,Validators.required]),
@@ -22,9 +27,26 @@ export class CreateCustomerComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
   submitForm() {
-    console.log(this.createCustomerForm)
+    console.log(this.createCustomerForm);
+    if(this.createCustomerForm.status == "VALID"){
+      this.customerService.save(this.createCustomerForm.value).subscribe(() =>{
+        this.createCustomerForm.reset();
+      },() => {
+        console.log('err')
+      },() => {
+        this.router.navigateByUrl("customer")
+      });
+    }else {
+
+    }
+
+    // document.getElementById('modelId').click();
+    // @ts-ignore
+    // window.location = 'http://localhost:4200/customer'
+    // this.createCustomerForm.reset();
   }
 }

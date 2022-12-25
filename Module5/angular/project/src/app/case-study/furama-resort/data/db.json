@@ -1,0 +1,54 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Hung",
+      "age": 18,
+      "address": "Quang Nam",
+      "dateOfBirth": "1999-2-2",
+      "email": "humanice97@gmail.com",
+      "gender": true,
+      "phone": "0782076264"
+    },
+    {
+      "id": 2,
+      "name": "Hai",
+      "age": 23,
+      "address": "Quang Nam",
+      "dateOfBirth": "1998-1-2",
+      "email": "hai@gmail.com",
+      "gender": true,
+      "phone": "0123023123"
+    },
+    {
+      "id": 3,
+      "name": "Hai",
+      "age": 23,
+      "address": "Quang Nam",
+      "dateOfBirth": "1998-1-2",
+      "email": "hai@gmail.com",
+      "gender": true,
+      "phone": "0123023123"
+    },
+    {
+      "id": 4,
+      "name": "Hai",
+      "age": 23,
+      "address": "Quang Nam",
+      "dateOfBirth": "1998-1-2",
+      "email": "hai@gmail.com",
+      "gender": true,
+      "phone": "0123023123"
+    },
+    {
+      "id": 6,
+      "name": "Le Tu Hung",
+      "dateOfBirth": "2022-12-16",
+      "email": "humanice97@gmail.com",
+      "age": "123",
+      "address": "QuangNam",
+      "gender": false,
+      "phone": "+84782076264"
+    }
+  ]
+}
