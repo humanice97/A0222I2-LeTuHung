@@ -15,10 +15,10 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let item of customerList">
+    <tr *ngFor="let item of customerList | paginate: config" >
       <td>{{item.id}}</td>
       <td>{{item.name}}</td>
-      <td>{{item.dateOfBirth | date: 'dd-MM-yyyy'}}</td>
+      <td>{{item.dateOfBirth | date: 'MM-yyyy-dd'}}</td>
       <td>{{item.email}}</td>
       <td>{{item.age}}</td>
       <td>{{item.address}}</td>
@@ -31,6 +31,7 @@
     </tr>
     </tbody>
   </table>
+  <pagination-controls class="d-flex justify-content-center" (pageChange)="pageChanged($event)" responsive="true" previousLabel="Trang trước" nextLabel="Trang sau"></pagination-controls>
 </div>
 
 
@@ -39,7 +40,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">Delete Customer</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

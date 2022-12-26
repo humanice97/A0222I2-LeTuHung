@@ -27,7 +27,6 @@ import { CustomerListComponent } from './case-study/furama-resort/component/cust
 import { CreateCustomerComponent } from './case-study/furama-resort/component/customer/create-customer/create-customer.component';
 import { CreateEmployeeComponent } from './case-study/furama-resort/component/employee/create-employee/create-employee.component';
 import { FacilitiesComponent } from './case-study/furama-resort/component/facility/facilities/facilities.component';
-import { FacilitiesDeleteComponent } from './case-study/furama-resort/component/facility/facilities-delete/facilities-delete.component';
 import { FacilitiesEditComponent } from './case-study/furama-resort/component/facility/facilities-edit/facilities-edit.component';
 import { HomePageComponent } from './case-study/furama-resort/component/home/home-page/home-page.component';
 import { CustomerEditComponent } from './case-study/furama-resort/component/customer/customer-edit/customer-edit.component';
@@ -39,6 +38,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { ProductListComponent } from './ss7-service-router/bai-tap/product/component/product-list/product-list.component';
 import { ProductCreateComponent } from './ss7-service-router/bai-tap/product/component/product-create/product-create.component';
 import { ProductUpdateComponent } from './ss7-service-router/bai-tap/product/component/product-update/product-update.component';
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 @NgModule({
@@ -67,7 +67,6 @@ import { ProductUpdateComponent } from './ss7-service-router/bai-tap/product/com
     CreateCustomerComponent,
     CreateEmployeeComponent,
     FacilitiesComponent,
-    FacilitiesDeleteComponent,
     FacilitiesEditComponent,
     HomePageComponent,
     CustomerEditComponent,
@@ -78,13 +77,14 @@ import { ProductUpdateComponent } from './ss7-service-router/bai-tap/product/com
     ProductCreateComponent,
     ProductUpdateComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        NgxPaginationModule
+    ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
 })

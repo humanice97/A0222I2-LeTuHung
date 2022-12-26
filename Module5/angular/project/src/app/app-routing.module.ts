@@ -23,6 +23,9 @@ import {
 import {
   ProductUpdateComponent
 } from "./ss7-service-router/bai-tap/product/component/product-update/product-update.component";
+import {
+  FacilitiesEditComponent
+} from "./case-study/furama-resort/component/facility/facilities-edit/facilities-edit.component";
 
 
 const routes: Routes = [
@@ -36,7 +39,8 @@ const routes: Routes = [
   {path: 'create', component: CreateCustomerComponent},
   {path: 'product',component: ProductListComponent},
   {path: 'product/create-product', component: ProductCreateComponent},
-  {path: 'product/update/:id',component:ProductUpdateComponent}
+  {path: 'product/update/:id',component:ProductUpdateComponent},
+  {path: 'facility/edit-facilities/:id',component:FacilitiesEditComponent}
 ];
 
 @NgModule({

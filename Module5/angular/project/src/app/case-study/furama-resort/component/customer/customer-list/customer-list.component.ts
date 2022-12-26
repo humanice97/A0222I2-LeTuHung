@@ -12,6 +12,7 @@ export class CustomerListComponent implements OnInit {
 
   customer: Customer = {};
   customerList: Customer[] = [];
+  config: { totalItems: any; itemsPerPage: number; currentPage: number };
 
   constructor(private _customerService: CustomerService) {
 
@@ -20,7 +21,17 @@ export class CustomerListComponent implements OnInit {
   ngOnInit(): void {
     this._customerService.findAll().subscribe((data) => {
       this.customerList = data;
+      this.config = {
+        itemsPerPage: 2,
+        currentPage: 1,
+        totalItems: this.customerList.length
+      };
     })
+
+  }
+
+  pageChanged(event: number) {
+    this.config.currentPage = event;
   }
 
 
